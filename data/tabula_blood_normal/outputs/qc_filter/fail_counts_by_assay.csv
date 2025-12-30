@@ -1,0 +1,4 @@
+assay,min_genes,max_genes,min_counts,max_counts,max_mt,max_ercc
+10x 3' v3,3175,486,0,447,2604,0
+10x 5' v2,462,11,0,36,220,0
+Smart-seq2,0,0,0,25,65,19
