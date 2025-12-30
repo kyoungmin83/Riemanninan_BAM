@@ -13,6 +13,9 @@ def main():
     os.makedirs(OUT_DIR, exist_ok=True)
 
     adata = load_counts(INPUT_PATH)
+    plot_qc_histograms(adata, out_dir=os.path.join(OUT_DIR, "figs"))
+    plot_qc_by_group_box(adata, groupby="assay", metric="pct_counts_mt", out_dir=os.path.join(OUT_DIR, "figs"))
+    plot_qc_by_group_box(adata, groupby="assay", metric="total_counts", out_dir=os.path.join(OUT_DIR, "figs"))
     print(adata)
 
 
