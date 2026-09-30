@@ -1,0 +1,85 @@
+{
+  "input": {
+    "input_dir": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/mtg/subclass_hvg_work/subclass_hvg",
+    "h5ad_paths": null,
+    "file_pattern": "_hvg4000\\.h5ad$"
+  },
+  "output": {
+    "out_dir": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/mtg/hdwgcna_outputs",
+    "save_seurat_rds": false,
+    "save_plots": false,
+    "save_tom": false,
+    "save_me_csv": true,
+    "save_power_table_csv": true,
+    "save_summary_json": true
+  },
+  "data": {
+    "assay_name": "RNA",
+    "counts_layer_candidates": ["counts", "X"],
+    "subclass_key": "Subclass",
+    "donor_key": "donor_id",
+    "harmony_key": "donor_id",
+    "idents_key": "Subclass",
+    "min_cells": 200,
+    "min_genes": 50,
+    "use_all_genes_in_file": true,
+    "custom_gene_list": null,
+    "transpose_if_needed": false
+  },
+  "preprocess": {
+    "normalize_method": "LogNormalize",
+    "scale_factor": 10000,
+    "nfeatures_variable": 2000,
+    "run_find_variable_features": false,
+    "run_scale_data": true,
+    "vars_to_regress": null,
+    "run_pca": true,
+    "npcs": 30,
+    "run_harmony": false,
+    "harmony_theta": null,
+    "run_umap": false,
+    "umap_dims": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+    "seed": 42
+  },
+  "metacell": {
+    "group_by": ["Subclass", "donor_id"],
+    "ident_group": "Subclass",
+    "reduction": "pca",
+    "dims": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+    "k": 25,
+    "max_shared": 10,
+    "min_cells": 100,
+    "target_metacells": 700,
+    "max_iter": 3000,
+    "mode": "average"
+  },
+  "network": {
+    "network_type": "signed",
+    "cor_fnc": "bicor",
+    "soft_powers": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30],
+    "min_power": 6,
+    "deepSplit": 4,
+    "pamStage": false,
+    "detectCutHeight": 0.995,
+    "minModuleSize": 50,
+    "mergeCutHeight": 0.2,
+    "sampleForCalibration": true,
+    "sampleForCalibrationFactor": 1000,
+    "useDiskCache": true,
+    "chunkSize": null
+  },
+  "eigengenes": {
+    "compute": true,
+    "harmony_group_by_vars": null,
+    "vars_to_regress": null,
+    "scale_model_use": "linear",
+    "pc_dim": 1,
+    "compute_connectivity": true,
+    "connectivity_group_by": "Subclass"
+  },
+  "runtime": {
+    "threads": 8,
+    "stop_on_error": false,
+    "verbose": true
+  }
+}

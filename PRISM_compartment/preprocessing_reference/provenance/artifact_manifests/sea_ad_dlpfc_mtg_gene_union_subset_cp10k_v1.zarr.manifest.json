@@ -1,0 +1,30 @@
+{
+  "purpose": "raw_count_to_cp10k_zarr",
+  "config": {
+    "src_zarr_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/sea_ad_dlpfc_mtg_gene_union_subset_raw.zarr",
+    "out_zarr_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/sea_ad_dlpfc_mtg_gene_union_subset_cp10k_v1.zarr",
+    "source_matrix": "X",
+    "umi_col": "Number of UMIs",
+    "scale_factor": 10000.0,
+    "row_block_size": 4096,
+    "overwrite": false,
+    "out_manifest_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/sea_ad_dlpfc_mtg_gene_union_subset_cp10k_v1.zarr.manifest.json"
+  },
+  "src_zarr_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/sea_ad_dlpfc_mtg_gene_union_subset_raw.zarr",
+  "out_zarr_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/sea_ad_dlpfc_mtg_gene_union_subset_cp10k_v1.zarr",
+  "umi_col": "Number of UMIs",
+  "n_obs": 2773812,
+  "n_vars": 13498,
+  "matrix": {
+    "source_matrix": "X",
+    "n_rows": 2773812,
+    "n_nnz": 9009299831,
+    "scale_factor": 10000.0,
+    "bad_or_nonpositive_umi_rows": 0
+  },
+  "notes": [
+    "Output X is sparse CSR CP10K, not log1p.",
+    "Ordinal thresholds should be fitted downstream with make_ordinal_data_zarr.py.",
+    "Reference scalers should be fitted downstream with build_celltype_control_scaler.py."
+  ]
+}

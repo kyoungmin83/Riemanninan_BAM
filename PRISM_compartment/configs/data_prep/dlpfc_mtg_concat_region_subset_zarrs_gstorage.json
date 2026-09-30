@@ -1,0 +1,23 @@
+{
+  "inputs": [
+    {
+      "name": "dlpfc",
+      "region_label": "DLPFC",
+      "zarr_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/sea_ad_dlpfc_gene_union_subset_raw.zarr"
+    },
+    {
+      "name": "mtg",
+      "region_label": "MTG",
+      "zarr_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/sea_ad_mtg_gene_union_subset_raw.zarr"
+    }
+  ],
+  "out_zarr_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/sea_ad_dlpfc_mtg_gene_union_subset_raw.zarr",
+  "out_gene_indices_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/gene_union_subset_indices_dlpfc_mtg.npy",
+  "out_gene_names_json": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/gene_union_subset_gene_names_dlpfc_mtg.json",
+  "out_manifest_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/sea_ad_dlpfc_mtg_gene_union_subset_raw_manifest.json",
+  "data_chunk_size": 2000000,
+  "indptr_chunk_size": 1000000,
+  "copy_chunk_size": 20000000,
+  "prefix_obs_index": true,
+  "overwrite": false
+}

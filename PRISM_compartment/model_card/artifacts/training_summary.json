@@ -1,0 +1,25 @@
+{
+  "stopped_epoch": 55,
+  "best_epoch": 55,
+  "best_metric": -1.5563580881231003,
+  "monitored_split": "val",
+  "monitored_name": "composite",
+  "stop_reason": "completed_all_epochs",
+  "used_best_checkpoint_for_test": false,
+  "selection_mode": "composite",
+  "selected_best_epoch": 55,
+  "selected_best_score": -1.5563580881231003,
+  "primary_best_epoch": 13,
+  "primary_best_metric": 1.4771953161731872,
+  "best_per_criterion": {
+    "loss/total": 1.4771953161731872,
+    "loss/rec": 0.5525730866663379,
+    "metric/ordinal_nonzero_acc": 0.3074543905724841,
+    "metric/ordinal_balanced_recall": 0.4627262853951502
+  },
+  "bad_epochs_at_stop": 0,
+  "patience": 5,
+  "distributed": true,
+  "world_size": 6,
+  "backend": "nccl"
+}

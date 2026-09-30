@@ -1,0 +1,17 @@
+[Unit]
+Description=SV7 integrated PRISM learned pathology rank (CLS corrective continuation)
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+WorkingDirectory=/home/kmlee/project_local/kmlee_bam_integrated_pathranklearn_20260824
+ExecStart=/home/kmlee/project_local/kmlee_bam_integrated_pathranklearn_20260824/scripts/generated/run_prism_integrated_pathranklearn_attempt_sv7_recovery_20260826.sh
+Restart=on-failure
+RestartSec=45
+KillMode=control-group
+TimeoutStopSec=120
+
+[Install]
+WantedBy=default.target

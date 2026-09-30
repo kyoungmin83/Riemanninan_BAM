@@ -1,0 +1,31 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Credentials and local environments
+.env
+.env.*
+.venv/
+venv/
+
+# External data, learned weights and generated run outputs
+*.pt
+*.pth
+*.ckpt
+*.h5ad
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.parquet
+*.pkl
+*.pickle
+*.rds
+*.RData
+*.zarr/
+outputs/
+train_runs/
+*.log

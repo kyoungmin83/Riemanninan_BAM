@@ -1,0 +1,23 @@
+{
+  "zarr_path": "/gstorage_data/riemann_bam/data/scRNA/SEA_AD/whole_taxnomy/sea_ad_mtg_rechunked.zarr",
+  "gene_indices_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/gene_union_original_indices.npy",
+  "out_zarr_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/sea_ad_mtg_gene_union_subset_raw.zarr",
+  "matrix_path": "raw/X",
+  "counts_layer": "counts",
+  "prefer_raw": true,
+  "obs_csv_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/pathology_aware_split/obs_with_pathology_split_mtg.csv",
+  "merge_obs_sidecar": true,
+  "check_gene_names_json": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/gene_union_ensembl.json",
+  "out_gene_indices_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/gene_union_subset_indices_mtg.npy",
+  "out_gene_names_json": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/gene_union_subset_gene_names_mtg.json",
+  "out_manifest_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/sea_ad_mtg_gene_union_subset_raw_manifest.json",
+  "row_chunk_size": 8192,
+  "data_chunk_size": 2000000,
+  "indptr_chunk_size": 1000000,
+  "max_csr_data_span": 200000000,
+  "max_span_to_selected_nnz_ratio": 20.0,
+  "write_raw_alias": false,
+  "overwrite": false,
+  "verify_n_rows": 64,
+  "compression_level": null
+}

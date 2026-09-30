@@ -1,0 +1,18 @@
+{
+  "regions": [
+    "dlpfc",
+    "mtg"
+  ],
+  "input_registry_jsons": [
+    "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/dlpfc/final_registry/final_gene_module_registry_compact.json",
+    "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/mtg/final_registry/final_gene_module_registry_compact.json"
+  ],
+  "n_genes": 13498,
+  "n_modules": 414,
+  "n_common_modules": 85,
+  "n_region_hdwgcna_modules": 329,
+  "n_singleton_gene_indices": 10,
+  "n_residual_gene_indices": 8812,
+  "compact_registry_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/final_gene_module_registry_compact.json",
+  "activity_weight_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/activity_weight_kme_or_l2_membership.npz"
+}

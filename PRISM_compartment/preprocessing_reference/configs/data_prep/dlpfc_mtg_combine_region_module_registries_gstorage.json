@@ -1,0 +1,15 @@
+{
+  "regions": [
+    {
+      "region": "dlpfc",
+      "registry_json": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/dlpfc/final_registry/final_gene_module_registry_compact.json",
+      "activity_weight_npz": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/dlpfc/final_registry/activity_weight_kme_or_l2_membership.npz"
+    },
+    {
+      "region": "mtg",
+      "registry_json": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/mtg/final_registry/final_gene_module_registry_compact.json",
+      "activity_weight_npz": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/mtg/final_registry/activity_weight_kme_or_l2_membership.npz"
+    }
+  ],
+  "out_dir": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry"
+}

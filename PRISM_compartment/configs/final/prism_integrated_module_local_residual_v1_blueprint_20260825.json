@@ -1,0 +1,276 @@
+{
+  "schema_version": "prism.integrated.module_local_personal_residual.design.v1",
+  "status": "implementation_complete_user_validation_pending",
+  "date": "2026-08-25",
+  "design_document": "docs/prism_integrated_module_local_residual_v1_design_20260825.md",
+  "decision": {
+    "training_form": "one_architecture_one_optimizer_one_continuous_checkpoint_lineage",
+    "module_local_residual": "accepted_for_implementation",
+    "scientific_scope": "rank2_personal_bottleneck_repair_not_nmda_threshold_nonlinearity",
+    "local_adapter_rank": 8,
+    "adaptive_local_rank_first_experiment": false,
+    "bam_uncertainty_input": false,
+    "target_latent_input": false,
+    "target_celltype_support_all_regions_excluded": true,
+    "test_donor_count": 9,
+    "test_donors_sealed": true,
+    "generator_curriculum_change_approved": false,
+    "generator_curriculum_decision_required": "retain_authorized_hard_pruning_epoch25_or_explicitly_approve_delayed_hardening_and_total_epoch_budget"
+  },
+  "base_rank_policy": {
+    "candidates": [
+      "SV6_integrated_fixed_pathology_rank8",
+      "SV7_integrated_learned_pathology_rank"
+    ],
+    "selection_split": "official_validation_only",
+    "selection_metrics": [
+      "general_module_recovery",
+      "AD_module_recovery",
+      "reconstruction",
+      "leakage",
+      "generator_noninferiority"
+    ],
+    "selected_policy_must_be_identical_for_comparator_and_module_local_arm": true,
+    "official_test_may_select_policy": false
+  },
+  "restore_point": {
+    "root": "/gstorage_data/kmlee/project/riemann_bam/outputs/SEA_AD_OUTPUTS/train_runs/_restore_snapshots/20260825_pre_module_local_v1",
+    "sv6": "sv6_integrated_rank8_e15",
+    "sv7": "sv7_integrated_pathrank_e2",
+    "sha256_verified": true
+  },
+  "implementation": {
+    "completed": true,
+    "training_launched": false,
+    "existing_sv6_sv7_runs_modified": false,
+    "static_compile_passed": true,
+    "isolated_unit_contract_test_cases_passed": 14,
+    "required_ddp_and_real_resume_tests_passed": false,
+    "legacy_integrated_default_off_config_load_passed": true,
+    "remaining_before_launch": [
+      "build_sealed_train-only_reliability_artifact",
+      "full-data system-build smoke",
+      "DDP checkpoint-resume smoke",
+      "existing-checkpoint exact-score identity audit",
+      "paired module-recovery posthoc traversal",
+      "explicit generator-curriculum and total-epoch-budget decision",
+      "celltype-leakage improvement audit",
+      "explicit user launch approval"
+    ]
+  },
+  "module_local_residual": {
+    "enabled": true,
+    "n_modules": 414,
+    "rank": 8,
+    "support_mask_mode": "exclude_target_celltype_all_regions",
+    "source": "precision_head.source_module_train_residualized",
+    "source_pathology_labels": false,
+    "source_age": false,
+    "source_target_region": false,
+    "source_target_latent": false,
+    "source_bam_uncertainty": false,
+    "pooling": {
+      "mode": "modulewise_reliability_weighted_region_balanced",
+      "context_count_reliability": true,
+      "train_only_split_half_module_reliability": true,
+      "equal_mass_across_observed_regions": true,
+      "missing_module_coverage_output": 0.0,
+      "input_clip_policy": "fixed_from_train_context_residual_quantiles"
+    },
+    "adapter": {
+      "diagonal": true,
+      "shared_read_matrix": true,
+      "target_celltype_write_matrix": true,
+      "hierarchical_global_plus_zero_centered_celltype_deviation": true,
+      "dense_414_by_414_transform": false,
+      "bounded_tanh_output": true,
+      "cap_policy": "frozen_rank2_epoch20_train_donor_personal_coefficient_absolute_quantile_0.995",
+      "cap_runtime_fallback": false,
+      "output_gate_initial_value": 0.0,
+      "rank2_personal_span_ridge_suppression": true,
+      "personal_span_basis_detached": true,
+      "exact_span_removal_claimed": false
+    },
+    "initialization": {
+      "output_gate": "exact_zero",
+      "global_diagonal": "one",
+      "celltype_diagonal_deviation": "zero",
+      "read_matrix": "deterministic_semi_orthogonal",
+      "global_write_matrix": "small_deterministic_normal",
+      "celltype_write_deviation": "zero",
+      "initial_forward_identity_required": true
+    },
+    "optimizer": {
+      "separate_parameter_group": true,
+      "provisional_lr_multiplier": 10.0,
+      "validation_tuned_lr_grid": false
+    }
+  },
+  "reliability_artifact": {
+    "required": true,
+    "proposed_name": "module_local_context_reliability_train64_s42_v1.npz",
+    "fit_split": "train_only",
+    "deterministic_split_seed": 42,
+    "required_arrays": [
+      "context_module_reliability",
+      "context_module_reliable_mask",
+      "context_names",
+      "module_names",
+      "train_donor_allowlist"
+    ],
+    "required_provenance": [
+      "registry_sha256",
+      "activity_dictionary_sha256",
+      "source_context_sha256",
+      "train_donor_allowlist_sha256",
+      "validation_donors_used_false",
+      "test_donors_used_false"
+    ]
+  },
+  "output_cap_artifact": {
+    "required": true,
+    "schema_version": "kmlee_bam.module_local_output_cap.v1",
+    "built": true,
+    "path": "provenance/module_local/rank2_e20_train64_output_cap_q995_20260825.npz",
+    "artifact_sha256": "76edbc17c78a29318302468fc0cf045c88cfe9b58b147f2ec57af673bcd8666d",
+    "output_cap": 2.3915109324455255,
+    "checkpoint_sha256": "2cdc91ae005e6183cd7aa9f620ab463e0c348db9752247adf320ecc261a99bd0",
+    "source_config_sha256": "b9428e1f1a71304fd26b90ae5527ca6b2eb9d0686bde49a7853082e65924b420",
+    "source_context_sha256": "ac39aade72eee687fdaa861dbe06ebd21ce2a5d97db43966397befc6677426f8",
+    "fit_source": "frozen_rank2_epoch20_checkpoint_train_donors_only",
+    "absolute_quantile": 0.995,
+    "required_provenance": [
+      "checkpoint_sha256",
+      "source_config_sha256",
+      "source_context_sha256",
+      "train_donor_allowlist_sha256",
+      "personal_rank_equals_2",
+      "validation_donors_used_false",
+      "test_donors_used_false"
+    ]
+  },
+  "curriculum": [
+    {
+      "epochs": [1, 12],
+      "module_local_scale": 0.0,
+      "state": "instantiated_exact_noop"
+    },
+    {
+      "epochs": [13, 16],
+      "module_local_scale": 0.0,
+      "state": "base_common_personal_response_crossfade_only"
+    },
+    {
+      "epochs": [17, 24],
+      "module_local_scale": "monotone_ramp_0_to_1",
+      "state": "role_separated_opening"
+    },
+    {
+      "epochs": [25, 35],
+      "module_local_scale": 1.0,
+      "state": "proposed_module_rescue_and_shadow_soft_generator_search",
+      "generator_schedule_approval": "pending"
+    },
+    {
+      "epochs": [36, 43],
+      "module_local_scale": 1.0,
+      "state": "proposed_phu_and_protected_hardening",
+      "generator_schedule_approval": "pending"
+    },
+    {
+      "epochs": [44, 55],
+      "module_local_scale": 1.0,
+      "state": "proposed_final_biologically_guarded_cardinality_consolidation",
+      "generator_schedule_approval": "pending"
+    }
+  ],
+  "regularization": {
+    "donor_balanced_celltype_zero_center": true,
+    "hierarchical_celltype_shrinkage": true,
+    "local_to_rank2_rms_soft_cap": true,
+    "local_code_pathology_adversary": true,
+    "local_code_age_adversary": true,
+    "rank2_personal_span_ridge_suppression": true,
+    "celltype_family_graph_prior": {
+      "primary_arm_enabled": false,
+      "secondary_arm_only_after_local_residual_passes": true,
+      "target_selected_from_reproduced_train_only_deficit": true,
+      "training_only_parameter_prior": true,
+      "same_donor_target_observation_forbidden": true
+    }
+  },
+  "required_diagnostics": [
+    "module_local_rms",
+    "rank2_personal_rms",
+    "module_local_to_rank2_rms_ratio",
+    "module_local_support_coverage",
+    "module_local_zero_coverage_fraction",
+    "module_local_code_singular_spectrum",
+    "module_local_code_participation_rank",
+    "module_local_code_rank95",
+    "module_local_personal_span_normalized_overlap_mean_and_max",
+    "paired_local_on_off_full_nll",
+    "paired_local_on_off_branch_nll",
+    "paired_local_on_off_general_module_recovery",
+    "local_pathology_leakage",
+    "local_age_leakage",
+    "rank2_personal_effective_dimension",
+    "direct_lie_affine_explicit_local_channel_ablation",
+    "astrocyte_microglia_pvm_sst_chodl_recovery",
+    "oligodendrocyte_improvement_retention",
+    "celltype_leakage_balanced_accuracy"
+  ],
+  "required_tests": [
+    "exact_zero_output_checkpoint_identity",
+    "target_celltype_both_regions_perturbation_invariance",
+    "non_target_support_sensitivity",
+    "target_latent_independence",
+    "bam_uncertainty_independence",
+    "train_only_reliability_provenance",
+    "module_registry_order_fail_closed",
+    "frozen_rank2_output_cap_provenance_fail_closed",
+    "output_gate_first_gradient_finite",
+    "internal_adapter_second_gradient_finite",
+    "ddp_rank_consistency",
+    "checkpoint_resume_curriculum_state",
+    "normalized_personal_span_overlap_gate",
+    "warm_start_missing_keys_prefix_restricted"
+  ],
+  "ablation_plan": [
+    "matched_integrated_module_local_off",
+    "diagonal_only",
+    "fixed_rank8_low_rank_only",
+    "diagonal_plus_fixed_rank8_primary",
+    "optional_train_deficit_selected_celltype_graph_prior_after_primary_pass"
+  ],
+  "comparison_contract": {
+    "same_seed": true,
+    "same_donor_split": true,
+    "same_optimizer_update_budget": true,
+    "same_pathology_rank_policy": true,
+    "baseline": "frozen_cls_prism_personal_rank2_epoch20_and_matched_integrated_comparator",
+    "test_donors_sealed_until_final_selection": true
+  },
+  "acceptance": {
+    "global_reconstruction_noninferiority": true,
+    "general_module_recovery_noninferiority_or_improvement": true,
+    "AD_module_recovery_noninferiority_or_improvement": true,
+    "celltype_q25_guard": true,
+    "reliable_worst_celltype_guard": true,
+    "e19_worst_regressed_celltypes_explicit_report_required": [
+      "Astrocyte",
+      "Microglia-PVM",
+      "Sst Chodl"
+    ],
+    "oligodendrocyte_improvement_retention_report_required": true,
+    "celltype_leakage_must_improve_vs_matched_integrated_comparator": true,
+    "celltype_leakage_must_pass_frozen_rank2_predeclared_margin": true,
+    "rank2_personal_branch_must_remain_non_decorative": true,
+    "pathology_and_age_leakage_must_pass": true,
+    "direct_route_only_improvement_rejected": true
+  },
+  "launch_guard": {
+    "launch_allowed": false,
+    "reason": "implementation tests are isolated only; sealed reliability artifact, full-data/DDP and real-resume smoke, exact checkpoint audit, posthoc and leakage traversal, explicit generator-curriculum decision, and launch approval remain required"
+  }
+}

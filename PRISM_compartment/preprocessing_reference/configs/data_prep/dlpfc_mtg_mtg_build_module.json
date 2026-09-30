@@ -1,0 +1,16 @@
+{
+  "zarr_path": "/home/kmlee/project/kmlee_bam/data/scRNA/SEA_AD/whole_taxnomy/sea_ad_mtg_rechunked.zarr",
+  "hallmark_gmt": "/home/kmlee/project_local/kmlee_bam/local_data/gene_module/hallmark_human.gmt",
+  "reactome_gmt": "/home/kmlee/project_local/kmlee_bam/local_data/gene_module/reactome_human.gmt",
+  "out_dir": "/home/kmlee/project/kmlee_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/mtg/module_build",
+  "module_h5ad_path": "/home/kmlee/project/kmlee_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/mtg/module_build/mtg_module_encoder_input.h5ad",
+  "singleton_genes": ["APOE", "GFAP", "SLC17A7", "GAD1", "C1QA", "C1QB", "TYROBP", "AQP4", "MOBP", "MBP"],
+  "reactome_top_k": 25,
+  "reactome_manual_keep": [],
+  "reactome_manual_drop": [],
+  "min_module_size": 8,
+  "max_module_size": 250,
+  "prune_redundancy_jaccard": 0.92,
+  "symbol_map_strategy": "unambiguous",
+  "chunk_rows": 4096
+}

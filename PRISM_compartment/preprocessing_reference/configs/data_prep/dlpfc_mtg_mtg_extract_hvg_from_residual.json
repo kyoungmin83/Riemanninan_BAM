@@ -1,0 +1,18 @@
+{
+  "h5ad_path": "/home/kmlee/project/kmlee_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/mtg/residual_prep_hdwgcna/residual_train.h5ad",
+  "out_dir": "/home/kmlee/project/kmlee_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/mtg/subclass_hvg_work",
+  "celltype_key": "Subclass",
+  "donor_key_preferred": "subject_id",
+  "donor_key_fallback": "donor_id",
+  "counts_layer": "counts",
+  "n_top_genes": 4000,
+  "max_cells_for_hvg": 100000,
+  "min_cells_per_gene": 5,
+  "use_all_subclasses": true,
+  "min_cells_per_subclass": 2000,
+  "min_donors_per_subclass": 20,
+  "save_obs_tables": true,
+  "obs_table_format": "csv",
+  "save_full_subset_h5ad": false,
+  "seed": 42
+}

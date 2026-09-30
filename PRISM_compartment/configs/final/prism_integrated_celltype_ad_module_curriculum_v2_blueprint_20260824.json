@@ -1,0 +1,242 @@
+{
+  "schema_version": "prism.integrated_celltype_ad_module_curriculum.design.v2",
+  "status": "design_only_non_executable",
+  "date": "2026-08-24",
+  "design_document": "docs/prism_integrated_celltype_ad_module_curriculum_v2_design_20260824.md",
+  "persistent_operating_note": "AGENTS.md",
+  "user_locked_next_run_contract": {
+    "merged_not_alternative": true,
+    "required_components": [
+      "canonical_ct64_phase1_rank8_biological_warmup",
+      "continuous_phase2_common_personal_rank2_prism",
+      "celltype_general_module_rescue",
+      "celltype_ad_pathology_axis_module_rescue",
+      "K8_non_neuronal_pseudobulk",
+      "phu_alignment_and_bounded_relative_weighting",
+      "celltype_tail_protection",
+      "constrained_automatic_generator_cardinality"
+    ],
+    "phase2_only_source_config_forbidden": true,
+    "current_sv6_integrated_classification": "phase1_omission_ablation_not_valid_integrated_comparator"
+  },
+  "decision": {
+    "training_form": "one_architecture_one_continuous_run_one_checkpoint_history",
+    "initialization": "scratch",
+    "pooling": "cls",
+    "persistent_agp": false,
+    "celltype_is_retained_biological_content": true
+  },
+  "comparison_contract": {
+    "baseline": "frozen_cls_prism_personal_rank2_epoch20",
+    "seed": 42,
+    "same_donor_split": true,
+    "same_optimizer_update_budget": true,
+    "test_donor_count": 9,
+    "test_donors_sealed": true
+  },
+  "architecture": {
+    "latent_width": 32,
+    "celltype_embedding_width": 64,
+    "project_celltype_out": false,
+    "personal_rank": 2,
+    "module_registry_count": 414,
+    "initial_generator_count": 414,
+    "phase1_first_order_pathology_decoder": {
+      "enabled_before_epoch_1": true,
+      "named_axes": ["Braak", "Thal", "LATE", "Lewy"],
+      "pathology_rank": 8,
+      "pairwise": false,
+      "free_pathology_interactions": false,
+      "disease_gate": false,
+      "automatic_rank_selection": false,
+      "new_centering_constraint": false,
+      "rank_policy": "fixed_canonical_rank8_for_primary_parity",
+      "learnable_pathology_rank_history_found": false,
+      "learnable_pathology_rank_requires_separate_user_authorized_ablation": true,
+      "realized_rank_diagnostics": {
+        "optimization_effect": "none",
+        "cadence": "every_epoch_and_stage_boundary",
+        "metrics_per_pathology_axis": [
+          "singular_value_spectrum",
+          "participation_rank",
+          "rank_for_95_percent_energy"
+        ]
+      }
+    },
+    "phase1_pathology_auxiliary": {
+      "enabled_before_epoch_1": true,
+      "lambda_path_aux": 0.3,
+      "lambda_axis_specificity": 0.05,
+      "lambda_pathology_tie": 0.1,
+      "persist_donor_celltype_ema": true
+    },
+    "all_phase2_components_instantiated_before_epoch_1": true,
+    "deterministic_disjoint_initialization_streams": true
+  },
+  "phase_fidelity_contract": {
+    "configuration_source": "union_of_canonical_ct64_phase1_and_frozen_rank2_phase2",
+    "phase2_only_source_forbidden": true,
+    "phase1_active_epochs": [1, 12],
+    "phase1_to_phase2_crossfade_epochs": [13, 16],
+    "rank8_parameters_persist_after_crossfade": true,
+    "optimizer_scheduler_checkpoint_history_continuous": true,
+    "phase1_epoch12_parity_audit_required": true
+  },
+  "curriculum": [
+    {
+      "stage": "A_ct64_phase1_bootstrap",
+      "nominal_epochs": [1, 3],
+      "learning_rate": 0.0001,
+      "gradient_accumulation": 1,
+      "active": ["canonical_phase1_reconstruction", "ordinal_decoder", "reference_anchoring", "nuisance_controls", "first_order_pathology_rank8_decoder", "donor_balanced_pathology_auxiliary"]
+    },
+    {
+      "stage": "B_ct64_phase1_biological_warmup",
+      "nominal_epochs": [4, 12],
+      "learning_rate": 0.0001,
+      "gradient_accumulation": 1,
+      "active": ["exact_canonical_phase1_contract", "pathology_rank8_parameter_learning", "persistent_pathology_aggregate_bank"]
+    },
+    {
+      "stage": "C_continuous_phase1_to_phase2_crossfade",
+      "nominal_epochs": [13, 24],
+      "learning_rate": 0.00002,
+      "gradient_accumulation": 2,
+      "active": ["phase1_pathology_route_crossfade_epochs_13_16", "common_prism", "personal_rank2", "response_ramp", "continuous_optimizer_and_checkpoint_state"]
+    },
+    {
+      "stage": "D_structured_module_rescue_and_soft_gate_search",
+      "nominal_epochs": [25, 35],
+      "learning_rate": 0.00002,
+      "gradient_accumulation": 2,
+      "active": ["stage_C", "general_centered_module_rescue", "pathology_axis_module_rescue", "non_neuronal_K8_aggregate", "reference_ema", "shadow_gate_search_epochs_25_28", "soft_gate_search_epochs_29_35"]
+    },
+    {
+      "stage": "E_phu_relative_consolidation_and_protected_hardening",
+      "nominal_epochs": [36, 43],
+      "learning_rate": 0.00002,
+      "gradient_accumulation": 2,
+      "active": ["stage_D", "phu_alignment", "bounded_relative_weighting", "reversible_hard_mask_candidates_without_target_count"]
+    },
+    {
+      "stage": "F_automatic_cardinality_consolidation",
+      "nominal_epochs": [44, 55],
+      "learning_rate": 0.00002,
+      "gradient_accumulation": 2,
+      "active": ["stage_E", "primal_dual_smallest_feasible_mask_search", "per_celltype_module_constraints", "safe_mask_rollback", "last_safe_mask_adaptation"]
+    }
+  ],
+  "module_rescue_contract": {
+    "general_view": "region_balanced_donor_celltype_centered_module_pseudobulk",
+    "pathology_view": "cross_fitted_multiaxis_module_coefficients",
+    "pathology_axes": ["Braak", "Thal", "CERAD", "LATE", "Lewy"],
+    "pathology_covariates": ["other_pathology_axes", "sex", "age", "region"],
+    "train_only_target_construction": true,
+    "split_half_reliability_mask": true,
+    "lineage_balance": {
+      "neuronal_mass": 0.5,
+      "non_neuronal_mass": 0.5
+    },
+    "celltype_deficit_multiplier_bounds": [0.5, 2.0],
+    "worst_tail_fraction": 0.25,
+    "non_neuronal_pseudobulk_mode": "aggregate",
+    "non_neuronal_effective_cells": 8,
+    "state_readout_updates": "disabled_for_primary_cls_pooling; eligible_only_in_a_separate_persistent_agp_arm"
+  },
+  "phu_contract": {
+    "relative_weight_bounds": [0.8, 1.25],
+    "normalize_mean_within_celltype": true,
+    "minimum_ess_fraction": 0.9,
+    "persist_state": true
+  },
+  "generator_contract": {
+    "cardinality_policy": "smallest_feasible_set_learned_automatically",
+    "fixed_target_generator_count": null,
+    "fixed_minimum_active_generators": null,
+    "search_start_epoch": 25,
+    "shadow_search_epochs": [25, 28],
+    "soft_gate_epochs": [29, 35],
+    "protected_hardening_epochs": [36, 43],
+    "final_cardinality_epochs": [44, 55],
+    "shadow_forward_active_generators": 414,
+    "count_objective": "normalized_expected_active_fraction",
+    "constraint_optimization": "primal_dual",
+    "constraint_update_split": "fixed_train_only_architecture_folds",
+    "validation_updates_gate_state": false,
+    "paired_all_on_reference": true,
+    "full_reconstruction_noninferiority": true,
+    "generator_isolated_reconstruction_noninferiority": true,
+    "protect_singletons": true,
+    "protect_unique_gene_coverage": true,
+    "per_celltype_general_module_constraints": true,
+    "per_celltype_ad_module_constraints": true,
+    "confidence_adjusted_constraint_ema": true,
+    "hard_mask_acceptance_consecutive_audits": 3,
+    "safe_mask_rollback": true,
+    "physical_deletion_before_final_freeze": false,
+    "generator_count_selection_role": "tie_breaker_only_after_all_biological_gates_pass_within_uncertainty"
+  },
+  "global_validation_gates": {
+    "minimum_ad_module_median": 0.783,
+    "minimum_ad_module_pooled": 0.683,
+    "blind_centered_margin_from_baseline": -0.02,
+    "minimum_celltypes_within_0_02_of_baseline": 12,
+    "maximum_reliable_celltype_regression": 0.05,
+    "minimum_phu_ess_fraction": 0.9
+  },
+  "per_celltype_ad_module_baseline": {
+    "Astrocyte": 0.4957812737435861,
+    "Chandelier": 0.7946841665142528,
+    "Endothelial": 0.7904860957559776,
+    "L2/3 IT": 0.8716299917832975,
+    "L4 IT": 0.9090566624900703,
+    "L5 ET": 0.9161517806040322,
+    "L5 IT": 0.912405401003293,
+    "L5/6 NP": 0.7653841149210041,
+    "L6 CT": 0.6316560522884381,
+    "L6 IT": 0.7864740154743348,
+    "L6 IT Car3": 0.9036885988019812,
+    "L6b": 0.6638695300464703,
+    "Lamp5": 0.8360761469033586,
+    "Lamp5 Lhx6": 0.8120790077353476,
+    "Microglia-PVM": 0.7225873786716968,
+    "OPC": 0.6277735465854277,
+    "Oligodendrocyte": 0.533942625031734,
+    "Pax6": 0.8256996253802386,
+    "Pvalb": 0.8151653213294862,
+    "Sncg": 0.71830723188117,
+    "Sst": 0.8572805171335992,
+    "Sst Chodl": 0.6049394848500566,
+    "VLMC": 0.8262752495266069,
+    "Vip": 0.8448903120254126
+  },
+  "checkpoint_selection_weights_after_all_gates_pass": {
+    "pooled_ad_module": 0.3,
+    "median_celltype_ad_module": 0.25,
+    "blind_centered": 0.2,
+    "ceiling_normalized_worst_six_celltypes": 0.15,
+    "cross_disjoint": 0.1
+  },
+  "required_new_features": [
+    "phase1_phase2_union_config_builder_with_parity_assertions",
+    "canonical_rank8_pathology_decoder_present_before_epoch1",
+    "checkpointed_phase1_phase2_crossfade_scale",
+    "disjoint_deterministic_submodule_initialization_streams",
+    "checkpointed_curriculum_controller",
+    "dynamic_learning_rate_and_gradient_accumulation",
+    "persistent_pathology_aggregate_bank",
+    "region_balanced_module_targets",
+    "pathology_axis_module_rescue",
+    "train_only_reliability_masks",
+    "celltype_deficit_ema_and_tail_cvar",
+    "shadow_soft_and_protected_hard_gate_modes",
+    "primal_dual_automatic_cardinality_controller_without_fixed_count_floor",
+    "per_celltype_generator_constraints",
+    "safe_generator_mask_rollback",
+    "module_aware_checkpoint_selector"
+  ],
+  "launch_guard": {
+    "launch_allowed": false,
+    "reason": "design-only blueprint; implementation, tests, smoke traversal, exact budget audit, and explicit launch approval are still required"
+  }
+}

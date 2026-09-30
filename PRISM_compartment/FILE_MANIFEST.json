@@ -1,0 +1,1312 @@
+{
+  "schema": "prism.compartment_e52.publication_source.v1",
+  "date": "2026-09-30",
+  "checkpoint_sha256": "9fbb7df5119aba87a52d437fe443d656044e3c9c868fe13b1c39b73ac375944d",
+  "manifest_excludes_self": true,
+  "files": {
+    ".gitignore": {
+      "bytes": 335,
+      "sha256": "f6b55c5a2293c417ff29afe8639a29bd896a247aaaa38851a8f22b82450586b0"
+    },
+    "README.md": {
+      "bytes": 2756,
+      "sha256": "e3023eb85ff0d108551dbd65df8fb612c098fb567461b0498eb43003a924830b"
+    },
+    "README_KO.md": {
+      "bytes": 3671,
+      "sha256": "b5cdd1fc8aa90b90961f7a37c714fdef23cd627146dddd0cbfe75febda664c7c"
+    },
+    "configs/data_prep/build_module_dlpfc.json": {
+      "bytes": 884,
+      "sha256": "496fb3488e2980f0d9fd83524eff2a4307a3ad8367f9fce987bc6a1c40dfd84c"
+    },
+    "configs/data_prep/dlpfc_mtg_build_celltype_control_scaler_cp10k_v1_gstorage.json": {
+      "bytes": 2536,
+      "sha256": "a7506befbff55f354ff5827466f499b476e8885a177b79cb976199522ce8a9fa"
+    },
+    "configs/data_prep/dlpfc_mtg_build_cp10k_zarr_gstorage.json": {
+      "bytes": 680,
+      "sha256": "81b1c2c7c464db8f0fa3dc918d4f57d20edd5c712da22979ef425bf541916f52"
+    },
+    "configs/data_prep/dlpfc_mtg_build_gene_union_subset_zarr_dlpfc_gstorage.json": {
+      "bytes": 1665,
+      "sha256": "ce53f8f2d042875d3db14403adcf492ee07674f8a236ca52553657e1bc6a9b89"
+    },
+    "configs/data_prep/dlpfc_mtg_build_gene_union_subset_zarr_mtg_gstorage.json": {
+      "bytes": 1653,
+      "sha256": "f01124761c00043a73653a3a84623becd38883253e1475b81c47f22ff3f10205"
+    },
+    "configs/data_prep/dlpfc_mtg_combine_region_module_registries_gstorage.json": {
+      "bytes": 907,
+      "sha256": "45263f731666d7745b4afcb482896a21f011e32a9360d93b12cec131bf5d7508"
+    },
+    "configs/data_prep/dlpfc_mtg_concat_region_subset_zarrs_gstorage.json": {
+      "bytes": 1343,
+      "sha256": "427f120d56c9d31ee288dae6df8612e738c0fa839b81c7e3e8cf3f1fe17975fc"
+    },
+    "configs/data_prep/dlpfc_mtg_dlpfc_integrate_hdwgcna_module_into_registry_gstorage.json": {
+      "bytes": 1216,
+      "sha256": "1b8ad0cf9c6a0d6f79b4b33b4f927847a5dfe03cbb9a83e89973dc9a8493831b"
+    },
+    "configs/data_prep/dlpfc_mtg_make_ordinal_data_zarr_bins4_cp10k_v1_gstorage.json": {
+      "bytes": 1487,
+      "sha256": "dc66172e78e35547e6b646f3f47192b570765cb291137110fd14f5e5a8576927"
+    },
+    "configs/data_prep/dlpfc_mtg_mtg_build_module.json": {
+      "bytes": 923,
+      "sha256": "a8c7a0083b9b188c57d493e9ae3336b1449a6872c4d5da7c906db1a73208187d"
+    },
+    "configs/data_prep/dlpfc_mtg_mtg_extract_hvg_from_residual.json": {
+      "bytes": 692,
+      "sha256": "7814e35c52f2e9007b7a01bf6237dc8ed51a84ebb25e4fb53d21342bfbc5a0fb"
+    },
+    "configs/data_prep/dlpfc_mtg_mtg_hdwgcna_gstorage.json": {
+      "bytes": 2464,
+      "sha256": "0cfeea44a55f8f0d38a423cc6c05cc55826ae5245e2be5167c5fa85d9308eee7"
+    },
+    "configs/data_prep/dlpfc_mtg_mtg_integrate_hdwgcna_module_into_registry_gstorage.json": {
+      "bytes": 1218,
+      "sha256": "915b261bc5dda91d321cbf21ffc8f716a134711f30183ff66a9df07d59eb311c"
+    },
+    "configs/data_prep/dlpfc_mtg_mtg_residual_prep_hdwgcna.json": {
+      "bytes": 1742,
+      "sha256": "520b0146550446fb4384de97f395fc6f30a4923a0c0aa0e31c73480ce607d9ef"
+    },
+    "configs/data_prep/integrate_hdwgcna_module_into_registry.json": {
+      "bytes": 1119,
+      "sha256": "c6598656e937fa9d5f9bf38ab53508f19c361bdbe9fd97a98dd80000d66ce10f"
+    },
+    "configs/data_prep/make_pathology_aware_donor_split_dlpfc_mtg.json": {
+      "bytes": 1828,
+      "sha256": "29ca5b86fcbfb594c1ed3dc7b7a1d90c5c380df5e86ec7a0a1cce252e11b918f"
+    },
+    "configs/data_prep/residual_prep_hdwgcna.json": {
+      "bytes": 1957,
+      "sha256": "1c73560daec102f736c70cee72c941cb0b111d4e816c2c97bbe33537a6df2739"
+    },
+    "configs/final/_boundary_smoke_train_config_prism_v5_sv6_joint_generator_count_s42_retry1_20260806.json": {
+      "bytes": 27726,
+      "sha256": "7ca27affedf2be2874bdeb7631ec5698c99ddefae5bb7cdc0fa80257b8158b99"
+    },
+    "configs/final/prism_integrated_celltype_ad_module_curriculum_v2_blueprint_20260824.json": {
+      "bytes": 9901,
+      "sha256": "e4ff807c77e5f7d4b8b02d7b9cbfd7a45fcdc5e88c9cf208471527a614117748"
+    },
+    "configs/final/prism_integrated_compartmental_nonlinearity_techzero_v2_blueprint_20260827.json": {
+      "bytes": 18615,
+      "sha256": "098245808c27ba3259094458a532debbd0e1ce7b0cd8b6733de932ce944d143c"
+    },
+    "configs/final/prism_integrated_module_local_residual_v1_blueprint_20260825.json": {
+      "bytes": 10606,
+      "sha256": "7d31b2162ca79fb4d1424690f6d31bcc9ddabc4e5458202bfd27517a5a3c3802"
+    },
+    "configs/final/resolved_config_epoch20.json": {
+      "bytes": 15087,
+      "sha256": "b9428e1f1a71304fd26b90ae5527ca6b2eb9d0686bde49a7853082e65924b420"
+    },
+    "configs/final/train_config_prism_integrated_pathranklearn_s42_sv7_active_source_20260826.json": {
+      "bytes": 26992,
+      "sha256": "d5deb1c028d4c4451f1092b88db8bff78dc56e7771e85eefc390d8befa1a1dc0"
+    },
+    "configs/final/train_config_prism_integrated_pathranklearn_s42_sv7_cls_recovery_20260826.json": {
+      "bytes": 28148,
+      "sha256": "ed8c248e79580fdadad65b358ac8c8a2f5b9e014eac364c749bd83f7652ec917"
+    },
+    "configs/final/train_config_prism_integrated_pathranklearn_s42_sv7_pre_recovery_20260826.json": {
+      "bytes": 26914,
+      "sha256": "97abe29ed657d9189bd4c5c2d706b26275be7eaf84bddb6cd30690143b8d1f36"
+    },
+    "configs/final/train_config_prism_integrated_rank8_primary_s42_sv6_20260824.json": {
+      "bytes": 25481,
+      "sha256": "0fa8293360de0b93c262fa6a01e4d56ef042f7f4c871dd8a65c61793e3cfcbeb"
+    },
+    "configs/final/train_config_prism_integrated_rank8_primary_s42_sv6_resume_e28_retry2_20260826.json": {
+      "bytes": 26831,
+      "sha256": "92c066515cff94a33f48e8373e5a8edb96a1c60d3917ed8e795e2a77d2bb6f5e"
+    },
+    "configs/final/train_config_prism_integrated_rank8_primary_s42_sv6_retry1_20260824.json": {
+      "bytes": 25655,
+      "sha256": "64f2da6186413d6d3fc0843eac0703ba03b0f39f007ffc8bb2b7e986a7be9af4"
+    },
+    "configs/final/train_config_prism_v5_sv6_joint_generator_count_s42_retry1_20260806.json": {
+      "bytes": 28290,
+      "sha256": "625c45399235cdf8457164c0fc2c53fb7813b36f561c513c06bf79422fcf9dd6"
+    },
+    "configs/generated/smoke_e12_e13_bf16_gradprobe_20260829.json": {
+      "bytes": 32316,
+      "sha256": "981ff1204c8572bf761ad97f89332a71e2236bf13c90b69ac6674821e339966c"
+    },
+    "configs/generated/smoke_e12_e13_bf16_recovery_20260829.json": {
+      "bytes": 32312,
+      "sha256": "eacc2ba6c6126e37c7ec97bfcd0b1dbbce8b3987b61544f61bfc2ec878b914e5"
+    },
+    "configs/generated/smoke_e12_e13_bf16_recovery_passgate_20260829.json": {
+      "bytes": 32324,
+      "sha256": "423ad5e7e1c5d5da77ab17e605f87576e45eec087e454933e3c5933e4df76f31"
+    },
+    "configs/generated/smoke_first_20260828.json": {
+      "bytes": 31593,
+      "sha256": "37a6fac3a1934a5a4fefc59822ed02739b0e1e11e1fdbf41287efd9a96d9660a"
+    },
+    "configs/generated/smoke_resume_20260828.json": {
+      "bytes": 31891,
+      "sha256": "d2fa4807854faa45c0c1f6cf93746988e192357ed2730e66c29a6d43a07abb0f"
+    },
+    "configs/generated/train_config_prism_integrated_compartmental_pathrank_s42_sv6_20260828.json": {
+      "bytes": 31614,
+      "sha256": "e2162e3309ec8ab66e32f55c0f1837f92673c6ab010fd6a4f2f6a215a564aa2f"
+    },
+    "configs/generated/train_config_prism_integrated_compartmental_pathrank_s42_sv6_freegen_recovery_e12_20260829.json": {
+      "bytes": 33125,
+      "sha256": "de65ca10d906eeb168294af25214dcf377a779296a8c6640a8603c668f5e494a"
+    },
+    "configs/phase1/_smoke_train_config_kmlee_bam_dlpfc_mtg_bins4_prism_modrescue_v2a_huber_nointeraction_s42_sv6.json": {
+      "bytes": 21391,
+      "sha256": "b3d21eed0ead6d0bab01bae9f2a477e53f4b8f19ebe49648f7e8afc4c30049d6"
+    },
+    "configs/phase1/ctemb64_base_canonical_config.json": {
+      "bytes": 15827,
+      "sha256": "242dd1143431fe01c78db7006b0eceacda55b0f932fcf885dfa8206a5ed6d78f"
+    },
+    "configs/phase1/train_config_kmlee_bam_dlpfc_mtg_bins4_prism_modrescue_v2a_huber_nointeraction_s42_sv6.json": {
+      "bytes": 21312,
+      "sha256": "d276439763384e46a9870095115042fe338c991e5266051d31396b6307bf5f9c"
+    },
+    "configs/phase1/train_config_kmlee_bam_dlpfc_mtg_bins4_prism_modrescue_v2b_ccc_nointeraction_s42_sv6.json": {
+      "bytes": 21391,
+      "sha256": "b8e2aa66ef2c009ab43e9c26b3f8dd1effc1bbe1a79d86fa257b04d7c3381708"
+    },
+    "configs/phase1/train_config_kmlee_bam_dlpfc_mtg_bins4_prism_v3_learnedN_modrescue_nointeraction_s42_sv6.json": {
+      "bytes": 19672,
+      "sha256": "9217b99ee5c51607f0bde603131e8dc9386e113c450fb5cd4f4e2a7c293d503f"
+    },
+    "configs/phase1/train_config_kmlee_bam_dlpfc_mtg_bins4_v31a_cons_h8_ct64_gen414_singletonr2_s42.json": {
+      "bytes": 16062,
+      "sha256": "f71071c5c1f82576b93017a549e319133d2240c1ce77a35bbdd73938c6a69b6a"
+    },
+    "docs/prism_compartmental_techzero_v2_implementation_report_20260827.md": {
+      "bytes": 13448,
+      "sha256": "53dc9fa1535a7bedbc9e077c77e54600b67942604996adb2c5beb16957c7e9a1"
+    },
+    "docs/prism_integrated_celltype_ad_module_curriculum_v2_design_20260824.md": {
+      "bytes": 23577,
+      "sha256": "c72fe8a69d08f473ef2bfbade4f7d3c8d7704268d04c92429aa1e853dbe7310f"
+    },
+    "docs/prism_integrated_compartmental_nonlinearity_techzero_v2_design_20260827.md": {
+      "bytes": 29856,
+      "sha256": "cf1a50340ecf185ceb65621e6dbc07eb0ac5b69859c7bd68e1036ba7ec8f62b1"
+    },
+    "docs/prism_integrated_module_local_residual_v1_design_20260825.md": {
+      "bytes": 20965,
+      "sha256": "ffcfde4e04d0c66843606fef9ffdcb72470d4c5ff82acc02f125f1f57c73adf5"
+    },
+    "docs/prism_projection_whitening_module_rescue_v2_design_20260804.md": {
+      "bytes": 22775,
+      "sha256": "6d48b2a83bc9a22b28fa39a7c48c7b1f40c41f6c05e9dd879b47cf603da7950d"
+    },
+    "docs/prism_v5_online_joint_generator_count_design_20260805.md": {
+      "bytes": 4879,
+      "sha256": "9faf01974dcee82e327e7ba7cc55c0a8265bbce1e1f9dee6a40ce9280109d32e"
+    },
+    "docs/sv7_integrated_learned_pathology_rank_run_20260824.md": {
+      "bytes": 4653,
+      "sha256": "b05fa67dda212fe06198931de5ef9878d011ebd9bd3628ecc98cfa1c0f1a59a1"
+    },
+    "model_card/CHECKPOINT_MANIFEST.json": {
+      "bytes": 2060,
+      "sha256": "87ee666a474ec07211c81ba2bff385eb387fcbdcf9a8e0ebdb48aa7ea64ea2f1"
+    },
+    "model_card/MODEL_CARD_KO.md": {
+      "bytes": 8013,
+      "sha256": "16adb14b0d12d103d2773aa422bc06691c032f2dd1ec197bcd035c9295853708"
+    },
+    "model_card/artifacts/joint_generator_count_epoch_052.json": {
+      "bytes": 7070,
+      "sha256": "a65a92eb491188379ba0ad81b4361042897e0e433d52f18b7c0dd2dff97932dc"
+    },
+    "model_card/artifacts/training_summary.json": {
+      "bytes": 731,
+      "sha256": "a7b9ea14bb4d739c30514d08a3ff705849be4f7c375081ede935e5ef94556d02"
+    },
+    "model_card/cfg/resolved_config.json": {
+      "bytes": 21031,
+      "sha256": "0618ced5ac4fd7a096422ddddf3ac02e631d305c0e05596b6b04ad8de3e66846"
+    },
+    "model_card/cfg/source_config.json": {
+      "bytes": 33125,
+      "sha256": "de65ca10d906eeb168294af25214dcf377a779296a8c6640a8603c668f5e494a"
+    },
+    "preprocessing_reference/configs/data_prep/build_module_dlpfc.json": {
+      "bytes": 884,
+      "sha256": "496fb3488e2980f0d9fd83524eff2a4307a3ad8367f9fce987bc6a1c40dfd84c"
+    },
+    "preprocessing_reference/configs/data_prep/dlpfc_mtg_build_celltype_control_scaler_cp10k_v1_gstorage.json": {
+      "bytes": 2536,
+      "sha256": "a7506befbff55f354ff5827466f499b476e8885a177b79cb976199522ce8a9fa"
+    },
+    "preprocessing_reference/configs/data_prep/dlpfc_mtg_build_cp10k_zarr_gstorage.json": {
+      "bytes": 680,
+      "sha256": "81b1c2c7c464db8f0fa3dc918d4f57d20edd5c712da22979ef425bf541916f52"
+    },
+    "preprocessing_reference/configs/data_prep/dlpfc_mtg_build_gene_union_subset_zarr_dlpfc_gstorage.json": {
+      "bytes": 1665,
+      "sha256": "ce53f8f2d042875d3db14403adcf492ee07674f8a236ca52553657e1bc6a9b89"
+    },
+    "preprocessing_reference/configs/data_prep/dlpfc_mtg_build_gene_union_subset_zarr_mtg_gstorage.json": {
+      "bytes": 1653,
+      "sha256": "f01124761c00043a73653a3a84623becd38883253e1475b81c47f22ff3f10205"
+    },
+    "preprocessing_reference/configs/data_prep/dlpfc_mtg_combine_region_module_registries_gstorage.json": {
+      "bytes": 907,
+      "sha256": "45263f731666d7745b4afcb482896a21f011e32a9360d93b12cec131bf5d7508"
+    },
+    "preprocessing_reference/configs/data_prep/dlpfc_mtg_concat_region_subset_zarrs_gstorage.json": {
+      "bytes": 1343,
+      "sha256": "427f120d56c9d31ee288dae6df8612e738c0fa839b81c7e3e8cf3f1fe17975fc"
+    },
+    "preprocessing_reference/configs/data_prep/dlpfc_mtg_dlpfc_integrate_hdwgcna_module_into_registry_gstorage.json": {
+      "bytes": 1216,
+      "sha256": "1b8ad0cf9c6a0d6f79b4b33b4f927847a5dfe03cbb9a83e89973dc9a8493831b"
+    },
+    "preprocessing_reference/configs/data_prep/dlpfc_mtg_make_ordinal_data_zarr_bins4_cp10k_v1_gstorage.json": {
+      "bytes": 1487,
+      "sha256": "dc66172e78e35547e6b646f3f47192b570765cb291137110fd14f5e5a8576927"
+    },
+    "preprocessing_reference/configs/data_prep/dlpfc_mtg_mtg_build_module.json": {
+      "bytes": 923,
+      "sha256": "a8c7a0083b9b188c57d493e9ae3336b1449a6872c4d5da7c906db1a73208187d"
+    },
+    "preprocessing_reference/configs/data_prep/dlpfc_mtg_mtg_extract_hvg_from_residual.json": {
+      "bytes": 692,
+      "sha256": "7814e35c52f2e9007b7a01bf6237dc8ed51a84ebb25e4fb53d21342bfbc5a0fb"
+    },
+    "preprocessing_reference/configs/data_prep/dlpfc_mtg_mtg_hdwgcna_gstorage.json": {
+      "bytes": 2464,
+      "sha256": "0cfeea44a55f8f0d38a423cc6c05cc55826ae5245e2be5167c5fa85d9308eee7"
+    },
+    "preprocessing_reference/configs/data_prep/dlpfc_mtg_mtg_integrate_hdwgcna_module_into_registry_gstorage.json": {
+      "bytes": 1218,
+      "sha256": "915b261bc5dda91d321cbf21ffc8f716a134711f30183ff66a9df07d59eb311c"
+    },
+    "preprocessing_reference/configs/data_prep/dlpfc_mtg_mtg_residual_prep_hdwgcna.json": {
+      "bytes": 1742,
+      "sha256": "520b0146550446fb4384de97f395fc6f30a4923a0c0aa0e31c73480ce607d9ef"
+    },
+    "preprocessing_reference/configs/data_prep/integrate_hdwgcna_module_into_registry.json": {
+      "bytes": 1119,
+      "sha256": "c6598656e937fa9d5f9bf38ab53508f19c361bdbe9fd97a98dd80000d66ce10f"
+    },
+    "preprocessing_reference/configs/data_prep/make_pathology_aware_donor_split_dlpfc_mtg.json": {
+      "bytes": 1828,
+      "sha256": "29ca5b86fcbfb594c1ed3dc7b7a1d90c5c380df5e86ec7a0a1cce252e11b918f"
+    },
+    "preprocessing_reference/configs/data_prep/residual_prep_hdwgcna.json": {
+      "bytes": 1957,
+      "sha256": "1c73560daec102f736c70cee72c941cb0b111d4e816c2c97bbe33537a6df2739"
+    },
+    "preprocessing_reference/environment_kmlee.yml": {
+      "bytes": 344,
+      "sha256": "f32995bc146f55b5e4a76421bf84ef35a4c88ac8251721b38bb59d9d89b6719f"
+    },
+    "preprocessing_reference/external_scripts/gstorage_hdwgcna/hdwgcna_cfg.json": {
+      "bytes": 2417,
+      "sha256": "5732fe56476d2618e7fe6a872a7deea02732d67e4082355d1ad1d5ce53859856"
+    },
+    "preprocessing_reference/external_scripts/gstorage_hdwgcna/hdwgcna_cfg_1.json": {
+      "bytes": 4065,
+      "sha256": "2baa4fb380538335e853a172eee8d67eb3123d076f7a607225edf5c5e88be8d3"
+    },
+    "preprocessing_reference/external_scripts/gstorage_hdwgcna/hdwgcna_cfg_2.json": {
+      "bytes": 2389,
+      "sha256": "91bf562d3c43b1c2c695692e6b650a29a3ea3a2ea610eed63cc5ec63f7f1ed30"
+    },
+    "preprocessing_reference/external_scripts/gstorage_hdwgcna/install_seurat.R": {
+      "bytes": 789,
+      "sha256": "f48fe8a7ec454d813c20cd754c2766771e287d1cf0703b3b4e6355d1d95ed1e5"
+    },
+    "preprocessing_reference/external_scripts/gstorage_hdwgcna/making_hdWGCNA_from_residual_genes.r": {
+      "bytes": 28546,
+      "sha256": "73241f75517e4783e9cae77e66313cb9cc75e7f89d3556bd2edf02e0ac629d37"
+    },
+    "preprocessing_reference/external_scripts/gstorage_hdwgcna/making_hdWGCNA_from_residual_genes_1.r": {
+      "bytes": 29471,
+      "sha256": "2c6b69bf531995da35e3ac754fb32381a449ad1c18e407b4c4b38e4fcb583764"
+    },
+    "preprocessing_reference/provenance/artifact_manifests/combined_registry_summary.json": {
+      "bytes": 901,
+      "sha256": "18ffaa4a107897553097272c47464813b71bd47430268fa2fd25bd6590a79598"
+    },
+    "preprocessing_reference/provenance/artifact_manifests/final_gene_union_ordinal_spec_log1p_cp10k_bins4_dlpfc_mtg_v1.json": {
+      "bytes": 2253,
+      "sha256": "aebd6b1e11088faddbf43946a70e68e0d59058b9cfcb84a09e375f57c72d081c"
+    },
+    "preprocessing_reference/provenance/artifact_manifests/reference_gene_scaler_cp10k_bins4_dlpfc_mtg_celltype_v1_summary.json": {
+      "bytes": 8118,
+      "sha256": "ecc3a1efc18199dcce9dde299af35920108db090340b12c68de83cc60b137869"
+    },
+    "preprocessing_reference/provenance/artifact_manifests/sea_ad_dlpfc_mtg_gene_union_subset_cp10k_v1.zarr.manifest.json": {
+      "bytes": 1576,
+      "sha256": "4239cc0e3b5a7d21950882fc897af41cf6f2c74705584a163510727d611a616b"
+    },
+    "preprocessing_reference/provenance/artifact_manifests/sea_ad_dlpfc_mtg_gene_union_subset_raw_manifest.json": {
+      "bytes": 4818,
+      "sha256": "ce23d8f6687a436756a0056ebe9de5a467c618d4a9e656efe3fbd6e8334d2807"
+    },
+    "preprocessing_reference/scripts/data_prep/combine_region_module_registries.py": {
+      "bytes": 8642,
+      "sha256": "8c7854ba6f8c8c721b9f4164a516a29122a0c5000fe5052959f04cda3fe636be"
+    },
+    "preprocessing_reference/scripts/data_prep/concat_region_subset_zarrs.py": {
+      "bytes": 10305,
+      "sha256": "56134fc5778757f4334b66830224b95853cdec1c167b1bd4069801ed6fcce32a"
+    },
+    "preprocessing_reference/scripts/data_prep/extract_population_pseudobulk.py": {
+      "bytes": 17329,
+      "sha256": "a51ea0c45b4963bec36753631424795d2f929967edda61daa8ba541b1d62731a"
+    },
+    "preprocessing_reference/scripts/data_prep/materialize_dlpfc_mtg_split_sidecars.py": {
+      "bytes": 5193,
+      "sha256": "3347fec7fe509392e2a612a0968fd34ba2ae56417b7e4ff6dd4e38e42dfba8b3"
+    },
+    "preprocessing_reference/scripts/data_prep/prepare_dlpfc_mtg_split_inputs.py": {
+      "bytes": 7390,
+      "sha256": "c72068e7485746546a2b99b5a55cef4cdf1055b1427849debedb3dc1502a2e7d"
+    },
+    "preprocessing_reference/src/kmlee_bam/gene_module/__init__.py": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "preprocessing_reference/src/kmlee_bam/gene_module/build_full_zarr_module_artifacts.py": {
+      "bytes": 21557,
+      "sha256": "eb94bd4fa71ce52217b2770b2ad2c03ae1ed37175f90aa57efa59be336493376"
+    },
+    "preprocessing_reference/src/kmlee_bam/gene_module/extrac_hvg_from_residual.py": {
+      "bytes": 18726,
+      "sha256": "bbab4d0f46d8b1421da8f8912e8c080dbb9bca4fbf338e6800abbc72ed116c1f"
+    },
+    "preprocessing_reference/src/kmlee_bam/gene_module/gene_module_registry.py": {
+      "bytes": 31057,
+      "sha256": "cd57d8c77c8b0896b4bd0d5864d84d1c9d77434a015c61f4f598a9fcf7b91d03"
+    },
+    "preprocessing_reference/src/kmlee_bam/gene_module/integrate_hdwgcna_module_into_registry.py": {
+      "bytes": 29234,
+      "sha256": "88ff29719ba2cb497097789ce67e668dff52fa1ab281d42dd5023e8e131e029c"
+    },
+    "preprocessing_reference/src/kmlee_bam/gene_module/residual_prep.py": {
+      "bytes": 41800,
+      "sha256": "04be6f26680d9efa539d3bf6e85a1a7db16a75c2f33c9a29ee3b2c78077552b6"
+    },
+    "preprocessing_reference/src/kmlee_bam/preprocessing/__init__.py": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "preprocessing_reference/src/kmlee_bam/preprocessing/data/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "preprocessing_reference/src/kmlee_bam/preprocessing/data/audit_data.py": {
+      "bytes": 19427,
+      "sha256": "b1f6a328975936bf78becc7874c036565e918081080582e380bd7d7ef105afd2"
+    },
+    "preprocessing_reference/src/kmlee_bam/preprocessing/data/build_celltype_control_scaler.py": {
+      "bytes": 34510,
+      "sha256": "77dac073a973b5592caded867d73a0df651986b6a159d62d8d3d71332f92f5e5"
+    },
+    "preprocessing_reference/src/kmlee_bam/preprocessing/data/build_cp10k_zarr.py": {
+      "bytes": 8608,
+      "sha256": "035d0a8d9577bf35ebc566401c2e0c69554e39d33093adc3fe45ec18a4efb0cd"
+    },
+    "preprocessing_reference/src/kmlee_bam/preprocessing/data/build_gene_union_subset_zarr.py": {
+      "bytes": 28091,
+      "sha256": "e4484deb883852eb9f1bfb85a67146844912fe342dac0733c28786d30f1ab22c"
+    },
+    "preprocessing_reference/src/kmlee_bam/preprocessing/data/ensg_gene_ensg_converter.py": {
+      "bytes": 4811,
+      "sha256": "b56e227dd2773cf8165f98bb06ba78a02fc9b4716d9b973543fd677021f439c3"
+    },
+    "preprocessing_reference/src/kmlee_bam/preprocessing/data/make_ordinal_data_zarr.py": {
+      "bytes": 17264,
+      "sha256": "0612d6ca2593d8d134bd7b768042becbd4504988a29c5739d5f645d7f6a5601d"
+    },
+    "preprocessing_reference/src/kmlee_bam/preprocessing/data/make_pathology_aware_donor_split.py": {
+      "bytes": 35219,
+      "sha256": "c3605bfe6d903e6d323307b9ba16ad49ec31440e34fe5461ab8ff09dc50efcbc"
+    },
+    "preprocessing_reference/src/kmlee_bam/preprocessing/data/ordinal_sc_data_generator_zarr_03.py": {
+      "bytes": 26166,
+      "sha256": "bd86b82bf310804908d062d9cc151701b6f99fd8ebf4f932f91216c767a9255f"
+    },
+    "preprocessing_reference/src/kmlee_bam/preprocessing/data/pathology_masks.py": {
+      "bytes": 11183,
+      "sha256": "58a4e776fdc440cf62bc0f271482388d397f6c7e6766f24e2d457037444d4d9e"
+    },
+    "preprocessing_reference/src/kmlee_bam/preprocessing/data/residual_R/residual.r": {
+      "bytes": 20,
+      "sha256": "aa9b6ba2a6ba65798f12dc0f9237756cbd8a79b1a09957a9a84dcf0ba2ca13fd"
+    },
+    "provenance/FILE_MANIFEST_ORIGINAL_20260923.json": {
+      "bytes": 113025,
+      "sha256": "de50ac9771f08c977a360466ac839426170c2858f0dee7691e895677ecf4126b"
+    },
+    "provenance/PUBLICATION_PREPARATION.json": {
+      "bytes": 23007,
+      "sha256": "aa61004fce55d336fea953bd5dad6a04e5da1f8850a241b68bad19dc55be7aa2"
+    },
+    "provenance/verify_bundle_rank2_legacy.py": {
+      "bytes": 2808,
+      "sha256": "3e3689868bde370937cc16ee276fbf12845ecebe0f4cc15a7e6c14d7a6a76c42"
+    },
+    "review_notes/prism_e42_e52_path_dependency_audit_20260903.md": {
+      "bytes": 8750,
+      "sha256": "524fae425aae0f6c6424cea570da2e073cdc0265dbc8cb4dd2dad6d636373127"
+    },
+    "review_notes/prism_training_problems_easy_20260923.md": {
+      "bytes": 13139,
+      "sha256": "78033e1b12081fa17e7df3a15b15b3ff139dc61f29c79afe07f5a928c829a236"
+    },
+    "scripts/analysis/analyze_latent_knn_pi_tech_posthoc.py": {
+      "bytes": 48419,
+      "sha256": "c63d6922a5f04f3e763a4258ba0e510a81958115ce71ce87743bed6c61db3a36"
+    },
+    "scripts/analysis/analyze_pathology_rank_threshold_sensitivity_20260828.py": {
+      "bytes": 2506,
+      "sha256": "c692b17f5217a8927672c9a2f9abd70a11dde781b560f24df7bef3b111dde661"
+    },
+    "scripts/analysis/analyze_prism_leakage_by_celltype_consumed_test.py": {
+      "bytes": 7136,
+      "sha256": "5e2fdfa3ac436c330d145f428028d8cb333d74ed21e32901f196157b672b0b2d"
+    },
+    "scripts/analysis/analyze_prism_leakage_by_celltype_locked_test.py": {
+      "bytes": 6637,
+      "sha256": "2d0e5f0058942d9b46727326d606094bd80d76218c3464ddb96b2fa1989a3711"
+    },
+    "scripts/analysis/analyze_prism_strict_reference_consumed_test.py": {
+      "bytes": 5312,
+      "sha256": "328f8592d0a91d78b5321d4551a8cd7c93fe4674cc6d1ca8952f889c16f89301"
+    },
+    "scripts/analysis/analyze_prism_strict_reference_leakage.py": {
+      "bytes": 3542,
+      "sha256": "95e3b06fa2d60969c22f541a35dd9168b637238f758e6a173b1fd3ab677091a3"
+    },
+    "scripts/analysis/analyze_prism_strict_reference_locked_test.py": {
+      "bytes": 4861,
+      "sha256": "740b3ff5ab757af14a80f36036ea544f1ad4960030ec6b5b1c8508d10bd8370e"
+    },
+    "scripts/analysis/build_prism_comprehensive_comparison_20260827.py": {
+      "bytes": 25535,
+      "sha256": "9f69c0f2a1800ebf20034c10244c33f14d299f2efb86953c3cfccc26bdbeb740"
+    },
+    "scripts/analysis/build_prism_locked_test_comparison_20260828.py": {
+      "bytes": 17060,
+      "sha256": "d9ec0958f0473b27b1d99c34a276c417eebeafa771fb14911487274264fea4a3"
+    },
+    "scripts/analysis/build_sv6_rank8_final_candidate_comparison_20260828.py": {
+      "bytes": 17790,
+      "sha256": "18e3892e2493161a38ff009d39c68df14a8dd9ab26e4a48938f30b8b4e4b1d84"
+    },
+    "scripts/analysis/build_sv7_consumed_test_comparison_20260828.py": {
+      "bytes": 19922,
+      "sha256": "5a5d1ed055d9785da51c094de934827fdb5325692a2bdf48fd6dbc466e97ea44"
+    },
+    "scripts/analysis/build_sv7_pathrank_candidate_comparison_20260828.py": {
+      "bytes": 19406,
+      "sha256": "042c2f8292e0a3681f290128d7bc3624c24056d214d16c1c929ecf876dbea317"
+    },
+    "scripts/analysis/compute_all_celltypes_donor_land_atlas_arrays.py": {
+      "bytes": 14178,
+      "sha256": "2e3cb401a36f67ae3a73605db2d0f6d92f960438dc07bcf5fe87850db9350e88"
+    },
+    "scripts/analysis/compute_donor_conditioned_riemann_fingerprint.py": {
+      "bytes": 37622,
+      "sha256": "ce0ea0fa72bc6efac9638e5b3214def2d7f210d6148b7ef3550e843343c7c53d"
+    },
+    "scripts/analysis/compute_donor_endpoint_projected_metrics.py": {
+      "bytes": 7707,
+      "sha256": "1883b60d47a9f45a37fe1843f9f3a5a91a40f121ac4104cd13f503499d1f3112"
+    },
+    "scripts/analysis/compute_donor_local_fisher_path_metrics.py": {
+      "bytes": 8462,
+      "sha256": "f58df7ad44d581357f1da8c05717e6ed1891ea79be19975e723e81ad18eecb1f"
+    },
+    "scripts/analysis/evaluate_all_celltypes_donor_riemann_summary.py": {
+      "bytes": 17453,
+      "sha256": "18a105a34ae5f4dcfb210975db6f633ba0f3a187fc352c45571be0be9880d3ad"
+    },
+    "scripts/analysis/evaluate_donor_conditioned_full5_paths.py": {
+      "bytes": 11598,
+      "sha256": "4b03f4de30f2c5678d0738ea81f020ab571acdcec173b81e6c15fada2941881e"
+    },
+    "scripts/analysis/extract_prism_path_ablation_fingerprints.py": {
+      "bytes": 14761,
+      "sha256": "8c18e18e19b9e5ac104e75df914abd830fd519d041cb0ff9e8664f2f1fcf1e56"
+    },
+    "scripts/analysis/finalize_prism_locked_test_audit_20260828.py": {
+      "bytes": 3849,
+      "sha256": "beda0be9e548ab89e080687751bfcf7a1fe7dd43a0f3f57ed3a26bee8e4145ab"
+    },
+    "scripts/analysis/plot_presentation_01_celltype_module_recovery.py": {
+      "bytes": 12987,
+      "sha256": "ff58619d80375a18032684bbda15503caae389ddf483307f43adff9cf4c92d4a"
+    },
+    "scripts/analysis/plot_presentation_01b_locked_test_confirmation.py": {
+      "bytes": 14627,
+      "sha256": "73d8a5483a8703a510983452ebe3026f1c13f1e1cb00fb4e6b9ae813b99c45c9"
+    },
+    "scripts/analysis/plot_presentation_02_common_disease_module_fingerprint.py": {
+      "bytes": 16179,
+      "sha256": "2bfdbcf58320fffdd1fddaeef0481466e0ed5e7b817dd351eed5f271881247d6"
+    },
+    "scripts/analysis/plot_presentation_03_personal_ablation_val_test.py": {
+      "bytes": 14320,
+      "sha256": "dcdc72c47b79963840e232549983dae64fe2cdc981ba2d5677e0450c2e2f515e"
+    },
+    "scripts/analysis/plot_presentation_04_common_axis_observed_validation.py": {
+      "bytes": 33196,
+      "sha256": "da1aa305f0d108cc43c7ba979d84e6604b954ecf9b03bbac7fb6c0c0eeebbbca"
+    },
+    "scripts/analysis/plot_presentation_05_latent_val_test_2d3d.py": {
+      "bytes": 35541,
+      "sha256": "ff72bc0a1b4cec45309f40a7ab515cb9aa8ea6d1107b4d80da195b551fa7d85e"
+    },
+    "scripts/analysis/prepare_prism_donor_clean_centroids.py": {
+      "bytes": 8422,
+      "sha256": "3ef151435627003e8e13a65dadf5837f6c6c48e771ca0b1a27928a41bc23c42c"
+    },
+    "scripts/analysis/render_all_celltypes_donor_land_atlas.py": {
+      "bytes": 10561,
+      "sha256": "59aa5cc2bb9fc214de1e6721cac22742f102189a2edf1f0eff7beca8a15c8a2f"
+    },
+    "scripts/analysis/render_all_celltypes_donor_riemann_summary.py": {
+      "bytes": 6151,
+      "sha256": "b714b6e3b6a24e9ab9912626e6775fa4fecae6d483868e8bbadceacf50da7298"
+    },
+    "scripts/analysis/render_common_global_fingerprint_shape_atlas.py": {
+      "bytes": 21073,
+      "sha256": "2d08302adfec1fb5201dd3be1ebfbf8ca58111438c3607400f43683644b440e1"
+    },
+    "scripts/analysis/render_donor_endpoint_fingerprint_overlays.py": {
+      "bytes": 20389,
+      "sha256": "918362447fc8ee9689ba990b17f7164e9b2f4bac35be59b3e98b89fe69f33f77"
+    },
+    "scripts/analysis/render_donor_multicontour_local_fingerprints.py": {
+      "bytes": 20169,
+      "sha256": "372634e7d63c5b4e1690c35877d6445c4945e579fcf3a662520605d31d9a7475"
+    },
+    "scripts/analysis/render_separate_closed_local_fingerprint_atlas.py": {
+      "bytes": 12836,
+      "sha256": "09b4a42506eb6c2387a069d74d620682714ec361344a40e0784706c375a38061"
+    },
+    "scripts/analysis/run_latent_knn_pi_tech_posthoc_sv7_e28_20260827.sh": {
+      "bytes": 1827,
+      "sha256": "b75f7140899f51e8798a834bc62cdcb1d8968fa2a9eef19fdafea156d9b271c5"
+    },
+    "scripts/analysis/run_legacy_rank2_extract_locked_test.py": {
+      "bytes": 1326,
+      "sha256": "46a953b6675786bfd5876f368652cee61dc98d0578f2cce7a3ada02f150727ad"
+    },
+    "scripts/analysis/run_prism_integrated_compartmental_pathrank_e37_interim_posthoc_sv6_20260831.sh": {
+      "bytes": 7168,
+      "sha256": "f0b958674477e87e5d03fa2395a548b84b790b73ed2bfcb1c668c572faa80f83"
+    },
+    "scripts/analysis/run_prism_integrated_compartmental_pathrank_interim_posthoc_sv6.sh": {
+      "bytes": 7258,
+      "sha256": "6b37e6f0b4ae04b3f9b96c5a7a9df2269ff95997c17e5b44c2e4fa053943ac39"
+    },
+    "scripts/analysis/run_prism_integrated_pathrank_candidate_posthoc_sv6_20260828.sh": {
+      "bytes": 7441,
+      "sha256": "9cf0af76f888eb6dbb3cd1052ec91e38293405de7947ae336080515ee149d2a4"
+    },
+    "scripts/analysis/run_prism_integrated_pathrank_e26_interim_posthoc_sv7_20260827.sh": {
+      "bytes": 6487,
+      "sha256": "59146631a99b00640196b7269eacecca6d419495780a46d290b1910b79f9b0d3"
+    },
+    "scripts/analysis/run_prism_integrated_pathrank_e30_interim_posthoc_sv7_20260827.sh": {
+      "bytes": 6625,
+      "sha256": "7069ae0553a1e400025ce2af794cae767abdd2436b693225f99b1b064bf340aa"
+    },
+    "scripts/analysis/run_prism_integrated_rank8_candidate_posthoc_sv6_20260828.sh": {
+      "bytes": 6703,
+      "sha256": "c771595f50e363e1b138aad463b07d5ebec14205c6d5e0378ff13ba32fee0204"
+    },
+    "scripts/analysis/run_prism_integrated_rank8_candidate_sweep_sv6_20260828.sh": {
+      "bytes": 1108,
+      "sha256": "5d54b438eee71c8e76b251d5b7812172b1452f84b307002acb21e49cfc509dd4"
+    },
+    "scripts/analysis/run_prism_integrated_rank8_e33_interim_posthoc_sv6_20260826.sh": {
+      "bytes": 5257,
+      "sha256": "5a6bd90c90fa79d5eef8a5f22653f69f02858dfac84324c53a4f5ca20d0625f9"
+    },
+    "scripts/analysis/run_prism_integrated_rank8_e42_interim_posthoc_sv6_20260827.sh": {
+      "bytes": 6192,
+      "sha256": "aa3deaec50901c5b66861e6bba7e50d628368b8a642fdda4c6bdf0785e4d8407"
+    },
+    "scripts/analysis/run_prism_integrated_rank8_e47_interim_posthoc_sv6_20260827.sh": {
+      "bytes": 6192,
+      "sha256": "479785dbc82dd6855efb335d6417bdc4b53469a71c133015b65b5780defe3f10"
+    },
+    "scripts/analysis/run_prism_locked_test_candidate_sv6_20260828.sh": {
+      "bytes": 7986,
+      "sha256": "56c2e0a47772a86f43cf8728721e7d5348099453dae2b6d7d984186389d092f2"
+    },
+    "scripts/analysis/run_prism_locked_test_celltype_audit_sv6_20260828.sh": {
+      "bytes": 2865,
+      "sha256": "d54dc805a8023caa556fe03c0417d1801ee3e915fd21d8ea79dca7bc27dafcf0"
+    },
+    "scripts/analysis/run_prism_locked_test_cpu_recovery_sv6_20260828.sh": {
+      "bytes": 2001,
+      "sha256": "256dee7856c94868aafe61ec83bcbbe14accd1652279f40e12c8f6c1631f3699"
+    },
+    "scripts/analysis/run_prism_locked_test_sweep_sv6_20260828.sh": {
+      "bytes": 2446,
+      "sha256": "1e41cd651578995047c7c713b2dd5bf58114a7f71f670620956ceec4ee170898"
+    },
+    "scripts/analysis/run_prism_sv7_consumed_test_candidate_sv6_20260828.sh": {
+      "bytes": 10471,
+      "sha256": "3c23a63023480a5c2e85294411c712337e59fe9cb3c6ec68430d2bbbacbe45af"
+    },
+    "scripts/analysis/summarize_prism_path_ablation.py": {
+      "bytes": 17537,
+      "sha256": "3b8435e0df43739554949a6ea7e78a59c61bf65be22cc1d94b1c89affda8a5d6"
+    },
+    "scripts/analysis/watch_learned_pathology_rank.py": {
+      "bytes": 4618,
+      "sha256": "e1042f4037ae459282469a788968cac8aa3942f0916749320b254c3b803a0dbb"
+    },
+    "scripts/data_prep/combine_region_module_registries.py": {
+      "bytes": 8642,
+      "sha256": "8c7854ba6f8c8c721b9f4164a516a29122a0c5000fe5052959f04cda3fe636be"
+    },
+    "scripts/data_prep/concat_region_subset_zarrs.py": {
+      "bytes": 10305,
+      "sha256": "56134fc5778757f4334b66830224b95853cdec1c167b1bd4069801ed6fcce32a"
+    },
+    "scripts/data_prep/extract_population_pseudobulk.py": {
+      "bytes": 17329,
+      "sha256": "a51ea0c45b4963bec36753631424795d2f929967edda61daa8ba541b1d62731a"
+    },
+    "scripts/data_prep/materialize_dlpfc_mtg_split_sidecars.py": {
+      "bytes": 5193,
+      "sha256": "3347fec7fe509392e2a612a0968fd34ba2ae56417b7e4ff6dd4e38e42dfba8b3"
+    },
+    "scripts/data_prep/prepare_dlpfc_mtg_split_inputs.py": {
+      "bytes": 7390,
+      "sha256": "c72068e7485746546a2b99b5a55cef4cdf1055b1427849debedb3dc1502a2e7d"
+    },
+    "scripts/training/authorize_prism_integrated_compartmental_pathrank_launch_20260828.py": {
+      "bytes": 5139,
+      "sha256": "adfc1a032f54864c31a988a32e18fe7abd4fd3f24894c2e97a1f699537c54ad1"
+    },
+    "scripts/training/build_generator_unprotected_continuation_config.py": {
+      "bytes": 7217,
+      "sha256": "aea1992487269efc4f0ba212f9960262494bf73ab43f6d942ecaf5cc59f060fc"
+    },
+    "scripts/training/build_pathology_rank_active_continuation_config.py": {
+      "bytes": 7655,
+      "sha256": "c5498a7dfed0eab33d83163554d5ace26ef90f45d4c4e0ac97bb4b14bebe6c36"
+    },
+    "scripts/training/build_prism_compartmental_e12_e13_bf16_smoke_20260829.py": {
+      "bytes": 5988,
+      "sha256": "286d0bbbc682f943684feed12222175978bbc6a2bffcf584419aa427afea192c"
+    },
+    "scripts/training/build_prism_integrated_compartmental_pathrank_config_20260828.py": {
+      "bytes": 13137,
+      "sha256": "b15fc73828b866daab4e281f2e4f87195b52723d1b03000b9ea1b2e6c9ceb081"
+    },
+    "scripts/training/build_prism_integrated_compartmental_pathrank_smoke_configs_20260828.py": {
+      "bytes": 2807,
+      "sha256": "21815d2f849f7549f7e427c10e4fddf86cbe4718ab22ed945318ae7fbc39a402"
+    },
+    "scripts/training/build_prism_integrated_pathranklearn_cls_recovery_config_20260826.py": {
+      "bytes": 3580,
+      "sha256": "6c844603373affe2905ba82e1659024a7c8325f63ea41856215648132ddc3a4a"
+    },
+    "scripts/training/build_prism_integrated_rank8_primary_config_20260824.py": {
+      "bytes": 8597,
+      "sha256": "229aa2f6db5227417c02aeb332bd78c559b0241407559432b9a0b060d4de8bd4"
+    },
+    "scripts/training/build_prism_integrated_rank8_resume_e28_config_20260826.py": {
+      "bytes": 3575,
+      "sha256": "ea39e1693490c695413ad7a85a31bc8d893ba2dcacacdbcf8a0c2d386f59f51a"
+    },
+    "scripts/training/build_prism_modrescue_v2_configs.py": {
+      "bytes": 11516,
+      "sha256": "e28965bd640528d3022c9932f33629884c2484c3c8dea6d9ba0fc1d401d3ae70"
+    },
+    "scripts/training/build_prism_module_local_compartment_graph_20260827.py": {
+      "bytes": 4058,
+      "sha256": "33267e2091a459963177ace0a3d6774e40e592d4624e3d074b0a6dad5db0dadf"
+    },
+    "scripts/training/build_prism_module_local_output_cap_20260825.py": {
+      "bytes": 11445,
+      "sha256": "6158a9f51c184f05dbd7214d9bab456f82e6d9b85f746bfbbbc1d50a7bc3edcb"
+    },
+    "scripts/training/build_prism_module_local_reliability_20260825.py": {
+      "bytes": 12574,
+      "sha256": "aea4330a3240862d82bc93bedde9c07dd2cb93dae8a0ec3eb23e416acac58779"
+    },
+    "scripts/training/build_prism_module_local_split_half_input_20260828.py": {
+      "bytes": 16938,
+      "sha256": "aee7b2c3ccf987eb7fed740ee5c03ae9acdfd342e30c19aedafb6c43c97c23b6"
+    },
+    "scripts/training/build_prism_module_rescue_stats.py": {
+      "bytes": 18444,
+      "sha256": "83f619d2e6071c2c5a25a2b7bafd57d3b8a63b8e5371976fe975d83c257cc824"
+    },
+    "scripts/training/build_prism_pathology_axis_artifact_20260824.py": {
+      "bytes": 9563,
+      "sha256": "1700276c3031145301bafa7bfa8d097c362d6d50b661aea1f6275b3a9aaccafc"
+    },
+    "scripts/training/build_prism_v5_joint_generator_count_config.py": {
+      "bytes": 10946,
+      "sha256": "f9c2caab7edf94c72daf9bb953116df75d2aad8037d77934cc6ad22a80fc07a1"
+    },
+    "scripts/training/calibrate_prism_modrescue_v2_ccc_sv7_20260804.sh": {
+      "bytes": 1813,
+      "sha256": "d61716669726a3cf519e8e229062d244da8062df649b711e08b7c5265be004b6"
+    },
+    "scripts/training/launch_generator_unprotected_continuation.sh": {
+      "bytes": 4121,
+      "sha256": "7f481310a480d08ff15a936a145c1fc15b24ac0ce1066925a02be01d97114dd4"
+    },
+    "scripts/training/launch_pathology_rank_active_continuation.sh": {
+      "bytes": 5313,
+      "sha256": "beb2a824c7721db85f90b343199cfed1c5e25793deee528cbdfad6e7301678eb"
+    },
+    "scripts/training/launch_prism_integrated_rank8_primary_sv6_20260824.sh": {
+      "bytes": 3589,
+      "sha256": "da760c8787d73a46b2cdca17e2ee2dc8eb13064a6c0a7c8f78c9a17292b07899"
+    },
+    "scripts/training/launch_prism_integrated_rank8_resume_e28_sv6_20260826.sh": {
+      "bytes": 4205,
+      "sha256": "f8377b49c08f91b5f38f070cbeb7ce278e47984802cdd6eb2c23fea30c859b32"
+    },
+    "scripts/training/launch_prism_modrescue_v2a_huber_sv6_20260804.sh": {
+      "bytes": 6593,
+      "sha256": "7c7e616ad3c65e9a630ec2ca70da1ec44a098e4b7851b9ec01972f3b3fc17b98"
+    },
+    "scripts/training/launch_prism_v3_learned_count_sv6_20260730.sh": {
+      "bytes": 4416,
+      "sha256": "6ea08c177d8e10d2e6120dc74dce95ebf4ccdc5baf3226d88c3f1e94dd4ab696"
+    },
+    "scripts/training/launch_prism_v5_joint_generator_count_sv6_retry1_20260806.sh": {
+      "bytes": 20991,
+      "sha256": "e0604ce0341a6d8bb8e174ffdd4b46a4f8523a01a353c662a2141512601ce354"
+    },
+    "scripts/training/migrate_generator_protection_checkpoint.py": {
+      "bytes": 9473,
+      "sha256": "1b287d94a29c6b83f1da87362c7a39106f7c33a54076a381084cd0a8c708c18e"
+    },
+    "scripts/training/migrate_pathology_rank_learning_checkpoint.py": {
+      "bytes": 7176,
+      "sha256": "cd1aceee55af076b0de089e3c62b2304bb20223e7f92c898bb1ce17a8249cb1c"
+    },
+    "scripts/training/preflight_prism_integrated_compartmental_pathrank_20260828.py": {
+      "bytes": 14054,
+      "sha256": "64277d5df6acdb7ec1ce90b3a6d81ea2355a99b1c3959f79b6fc921dfa9c5c3d"
+    },
+    "scripts/training/preflight_prism_integrated_pathranklearn_cls_recovery_20260826.py": {
+      "bytes": 5492,
+      "sha256": "eeefee2714df1ddda08cf011bfea47018ec4b690577666044b9962b9c7260981"
+    },
+    "scripts/training/preflight_prism_integrated_rank8_primary_20260824.py": {
+      "bytes": 10125,
+      "sha256": "3c59d3881c6bda8c0685201ed1a5c5f4e4895abc4fc94ddbcb9fd3e086073c59"
+    },
+    "scripts/training/preflight_prism_integrated_rank8_resume_e28_20260826.py": {
+      "bytes": 4872,
+      "sha256": "3bb523e2edea64c9fb152fb19643cfdace4dc051577a1389efefa89870f319e8"
+    },
+    "scripts/training/prepare_and_launch_prism_integrated_compartmental_pathrank_sv6_20260828.sh": {
+      "bytes": 9202,
+      "sha256": "5359f2b8baf2210f3e8f021a4da36a90a434229e027dc7d349e8ab23437fa6f2"
+    },
+    "scripts/training/prepare_pathrank_cls_recovery_resume_config_20260826.py": {
+      "bytes": 3707,
+      "sha256": "f4587a84ab5988409fb0cad127cf77da535eca86bd18f6c2987828af0add9cd5"
+    },
+    "scripts/training/prism-integrated-pathranklearn-sv7.service": {
+      "bytes": 559,
+      "sha256": "00b112fda208d54b3d063f432b3654e46d51741b3e3227717447902bcc6f510d"
+    },
+    "scripts/training/run_prism_compartmental_e12_e13_bf16_smoke_sv6_20260829.sh": {
+      "bytes": 4543,
+      "sha256": "7eebbbe1e9406329aceb774b32f82ac862295f027b76dc471d0f76452c02778b"
+    },
+    "scripts/training/run_prism_integrated_pathranklearn_attempt_sv7_recovery_20260826.sh": {
+      "bytes": 4642,
+      "sha256": "58aa3e380a8064d50fdec3b3bee47d92308d9b06e9e1af39ebc70a84ccbc78fd"
+    },
+    "scripts/training/run_prism_integrated_pathranklearn_tmux_supervisor_sv7_20260826.sh": {
+      "bytes": 1323,
+      "sha256": "5dacf87e477344fa3580c9ed3c1c3d8baeac9b59d5c982ed18095271d5b89840"
+    },
+    "scripts/verify_bundle.py": {
+      "bytes": 2167,
+      "sha256": "f2a1a0abf9b21581b89c2659314eaff635c6827e3a61871b90ff3d87f90f5426"
+    },
+    "src/kmlee_bam/__init__.py": {
+      "bytes": 59,
+      "sha256": "60afba9a1eec266f95237e86074be835097f09cfd5a10a48dbdb6b888e7dc762"
+    },
+    "src/kmlee_bam/data/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/kmlee_bam/data/bin_marginal.py": {
+      "bytes": 5645,
+      "sha256": "15ac3ef12daacbbf5fa6d2dd1d8785c2fc14d7ffe422ed6ec99e01b6f4f339ce"
+    },
+    "src/kmlee_bam/data/dataset_with_covariates.py": {
+      "bytes": 2829,
+      "sha256": "56585782b2000358c230bfa6367af1cf989003ae002da26bdfb8f43f1e88df9f"
+    },
+    "src/kmlee_bam/data/donor_context_dataset.py": {
+      "bytes": 18904,
+      "sha256": "7d2ea7495803d3881c749387ce9b9e87b5a5fdf6f4e754c6bce8a2d66dc938f2"
+    },
+    "src/kmlee_bam/data/grouped_batch_sampler.py": {
+      "bytes": 6777,
+      "sha256": "18dedb62c70e34a00ed46a472fd2f1baae109952b5231de658a5068223a6ab5f"
+    },
+    "src/kmlee_bam/data/module_local_reliability.py": {
+      "bytes": 19281,
+      "sha256": "9a31b5de155ecd1b51c01281af8ff267e953bf707b6a07170ffde0502e7ef307"
+    },
+    "src/kmlee_bam/data/ordinal_dataset.py": {
+      "bytes": 55218,
+      "sha256": "f1588350582e604c8fadf0aa9d52053cd1930133b55627d6c3daf153622101bd"
+    },
+    "src/kmlee_bam/data/pathology_masks.py": {
+      "bytes": 14026,
+      "sha256": "6d4a45dd6a726004e9d8b266122cb0cd15a3f704ade9bde883ef092f5fd553ab"
+    },
+    "src/kmlee_bam/data/reference_anchor_sampler.py": {
+      "bytes": 7877,
+      "sha256": "87e32e3f94f416db5896d95421ee0e64e4a2e18c0344b51523a73343c211d3be"
+    },
+    "src/kmlee_bam/data/shared_pathology_dataset.py": {
+      "bytes": 14998,
+      "sha256": "d109a2f2f9828edbcee58af9360709aa197efcab41d90bdbd6094c6e7384e057"
+    },
+    "src/kmlee_bam/gene_module/__init__.py": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "src/kmlee_bam/gene_module/build_full_zarr_module_artifacts.py": {
+      "bytes": 21557,
+      "sha256": "eb94bd4fa71ce52217b2770b2ad2c03ae1ed37175f90aa57efa59be336493376"
+    },
+    "src/kmlee_bam/gene_module/extrac_hvg_from_residual.py": {
+      "bytes": 18726,
+      "sha256": "bbab4d0f46d8b1421da8f8912e8c080dbb9bca4fbf338e6800abbc72ed116c1f"
+    },
+    "src/kmlee_bam/gene_module/gene_module_registry.py": {
+      "bytes": 31057,
+      "sha256": "cd57d8c77c8b0896b4bd0d5864d84d1c9d77434a015c61f4f598a9fcf7b91d03"
+    },
+    "src/kmlee_bam/gene_module/integrate_hdwgcna_module_into_registry.py": {
+      "bytes": 29234,
+      "sha256": "88ff29719ba2cb497097789ce67e668dff52fa1ab281d42dd5023e8e131e029c"
+    },
+    "src/kmlee_bam/gene_module/residual_prep.py": {
+      "bytes": 41800,
+      "sha256": "04be6f26680d9efa539d3bf6e85a1a7db16a75c2f33c9a29ee3b2c78077552b6"
+    },
+    "src/kmlee_bam/model/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/kmlee_bam/model/celltype_prior.py": {
+      "bytes": 4879,
+      "sha256": "6d661336a45b552619e7831db07ec04ba819d50fb2776286bc934fd64ce5fe65"
+    },
+    "src/kmlee_bam/model/hierarchical_precision.py": {
+      "bytes": 12893,
+      "sha256": "e749ab2933b60bb88b00097fd620abc7a1f06fdf094ab405a6ef1e786f6357d2"
+    },
+    "src/kmlee_bam/model/latent_nuisance_projection.py": {
+      "bytes": 12930,
+      "sha256": "eaf35a88cccba2d9ec22bb9efda7debae0110ca474f7dda8147b6fb8c65fed49"
+    },
+    "src/kmlee_bam/model/lie_ordinal_decoder.py": {
+      "bytes": 64942,
+      "sha256": "a08d329e4be62580639847424565fc74bb9d95c20ee3829c52b242ce859b8343"
+    },
+    "src/kmlee_bam/model/pathology_interactions.py": {
+      "bytes": 12359,
+      "sha256": "03627b1ffd555e5319537b7d6f0a8abcbd909b6088faf2199a6781976f91980a"
+    },
+    "src/kmlee_bam/model/precision_medicine.py": {
+      "bytes": 90890,
+      "sha256": "62802ac00a87a2e1662e181e5e966c31e1784c1330edc2fe61fe18f772efa33a"
+    },
+    "src/kmlee_bam/model/reference_anchored_prior.py": {
+      "bytes": 10166,
+      "sha256": "f28246038d1006815e0d8d6788e08bc77b6630e4d7af0d5c35466b1f232ec246"
+    },
+    "src/kmlee_bam/model/shared_pathology_precision.py": {
+      "bytes": 15936,
+      "sha256": "357e83a88b4d216faff64c02859a99e963b1ef929f47e1a8d7b4691fe6ca679c"
+    },
+    "src/kmlee_bam/model/state_encoder.py": {
+      "bytes": 32162,
+      "sha256": "409402c0eaffc03e153f34ac6f0fcca018e1e4c74885d1476b9f96c520e4ec02"
+    },
+    "src/kmlee_bam/model/system.py": {
+      "bytes": 19698,
+      "sha256": "df7f31766b58f993b87dc2676f06f2f7b5e389000e4457f92f2b2af659a459ce"
+    },
+    "src/kmlee_bam/modules/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/kmlee_bam/modules/attention_guided_pooling.py": {
+      "bytes": 17989,
+      "sha256": "4cb571afe3330126c176c7cd6c133846a159e09cf8347ea7b4982eae96bb21b3"
+    },
+    "src/kmlee_bam/modules/gene_embedding.py": {
+      "bytes": 9465,
+      "sha256": "bc73c662a4d3a1ef385cdefc9170cf0284d6b4c1692bc805e6806d376299f508"
+    },
+    "src/kmlee_bam/modules/module_tokenizer.py": {
+      "bytes": 20086,
+      "sha256": "bf14eb925de560c8caf99e25ccd8f549f9b9a48e88092a1a38d0e4b7c6104b65"
+    },
+    "src/kmlee_bam/modules/persistent_attention_slots.py": {
+      "bytes": 13080,
+      "sha256": "c01830e7c87a8781740e7fd55c05bb9afde16b5662c9acda9c572e80a6d46282"
+    },
+    "src/kmlee_bam/modules/stochastic_attention.py": {
+      "bytes": 28876,
+      "sha256": "87cf00bfbeacb0046cb709cba02feec7a008d64e0503186558e49f46b8cadce7"
+    },
+    "src/kmlee_bam/modules/transformer_block.py": {
+      "bytes": 9650,
+      "sha256": "859b8381bd32a778ee3756ffc91613647bf652bb42b7b7e169cb7515881ce571"
+    },
+    "src/kmlee_bam/modules/transformer_encoder.py": {
+      "bytes": 15827,
+      "sha256": "ad2f4532f117b5bec02f91f89a909e9da0cd8e96b0732cbeb5486dc1141db13e"
+    },
+    "src/kmlee_bam/objectives/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/kmlee_bam/objectives/aux_reference_adversary.py": {
+      "bytes": 16889,
+      "sha256": "282c2c18589ba5397627e92c2a5e176469fa89f39453958bd67d50e940ffcc96"
+    },
+    "src/kmlee_bam/objectives/celltype_alignment.py": {
+      "bytes": 37727,
+      "sha256": "2509e27b3f4a969af9162678a2d5c8261b09ef28ad6aeebfe44432602b7957ec"
+    },
+    "src/kmlee_bam/objectives/cp_bam.py": {
+      "bytes": 15191,
+      "sha256": "00e89b0f450cb90155c190967bdcb84146d6d113c56b01c9fc1cd077d25ded8e"
+    },
+    "src/kmlee_bam/objectives/hierarchical_ordinal.py": {
+      "bytes": 25554,
+      "sha256": "63413e67a4a850a5d1c1a6ae30eab71708e1a938dc512feae6270a2b1384cb8e"
+    },
+    "src/kmlee_bam/objectives/latent_knn_pi_tech.py": {
+      "bytes": 45032,
+      "sha256": "76d8ffa62bd3b9c4bc010d954204997320ffdd777c16e7d7c2d6fb6befe9bddd"
+    },
+    "src/kmlee_bam/objectives/metric_contrast.py": {
+      "bytes": 7522,
+      "sha256": "7fa7996478e110a8e7ffae02532bfddfeb25c61d9b12da3bffd6bcc6149cd90d"
+    },
+    "src/kmlee_bam/objectives/ordinal_uncertainty.py": {
+      "bytes": 13655,
+      "sha256": "fc1ebd396a1630effe8dd4d377463eac05d4f11b036b93b5a51bda57f69e06f4"
+    },
+    "src/kmlee_bam/objectives/pathology_aux.py": {
+      "bytes": 17616,
+      "sha256": "07c8cffe90d313655a2cffdab75cbef7cc9257d571934247f19207650b56fe17"
+    },
+    "src/kmlee_bam/objectives/prism_module_rescue.py": {
+      "bytes": 83781,
+      "sha256": "c30befdb450428cecc52060c11ecd1a4c34c22aefac28a3ccb7cb84756eae0f5"
+    },
+    "src/kmlee_bam/objectives/ranking_loss.py": {
+      "bytes": 12123,
+      "sha256": "6cbf83b674ce59ea8fe5bf84a6f8464443428e1307b6e2ca92c5430e37cbb97e"
+    },
+    "src/kmlee_bam/objectives/reference_celltype_adversary.py": {
+      "bytes": 7166,
+      "sha256": "aa1f4e203552e3d9507ddca7f426beaedf51ffb5f873597f1233c23e4bb479f1"
+    },
+    "src/kmlee_bam/objectives/reference_centering.py": {
+      "bytes": 6040,
+      "sha256": "9e18e1c4b1d40775c0874db09a9d5ba0e9ff5dc242d25fdbabaf5e45b2862ea6"
+    },
+    "src/kmlee_bam/objectives/sex_adversary.py": {
+      "bytes": 4688,
+      "sha256": "24b8657353a4ac548b91618d2c00e225e060bb1aa2ed1ee40cc43cae64e1c646"
+    },
+    "src/kmlee_bam/objectives/state_usage.py": {
+      "bytes": 4137,
+      "sha256": "8ab10e9ef5c3dfc3ad9b399a49029a004b0fa889298d3f40289495140ea9f3ec"
+    },
+    "src/kmlee_bam/objectives/subgroup_cvar.py": {
+      "bytes": 11762,
+      "sha256": "5c0a70c36e1d72a6bd2cb05dd4351e62e67fbb21ca4cdaea930713cc95f6332f"
+    },
+    "src/kmlee_bam/objectives/support_query_infonce.py": {
+      "bytes": 3363,
+      "sha256": "5e829376a25b5bceed80a896c73f73a4bf4b0bdf391e9d9a778251e33bea39ed"
+    },
+    "src/kmlee_bam/objectives/tech_adversary.py": {
+      "bytes": 5687,
+      "sha256": "a11cf1cd0f5d818443d3d90cebed8d32f09df21d5070631c31b7c6962b8d9f2d"
+    },
+    "src/kmlee_bam/objectives/thinning.py": {
+      "bytes": 5993,
+      "sha256": "0db07cca960017ed7a9bb501222ebe0d8296b2ac3c7ffd7f52be612ddb71ebd9"
+    },
+    "src/kmlee_bam/objectives/total_loss.py": {
+      "bytes": 32020,
+      "sha256": "17cd575ed8a03fedfbbb52286d3c83fb0e7b30e29d333bcfea547a7855e0c8f2"
+    },
+    "src/kmlee_bam/objectives/uncertainty_alignment.py": {
+      "bytes": 9621,
+      "sha256": "a404de0d480f2012e513b0567ffe9e23e1041733b868cd267cf5663386fa59ea"
+    },
+    "src/kmlee_bam/objectives/uncertainty_residual.py": {
+      "bytes": 5605,
+      "sha256": "802a5d6a1f6d242edec4459cb9f9271e7ba9b3063a6d2a3ae42099cc40f0d7d3"
+    },
+    "src/kmlee_bam/objectives/variance_floor.py": {
+      "bytes": 10919,
+      "sha256": "37fe256f1e81696531fdbd104c8685a1a93da7d9c90bf46656e70048768ef209"
+    },
+    "src/kmlee_bam/preprocessing/__init__.py": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "src/kmlee_bam/preprocessing/data/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/kmlee_bam/preprocessing/data/audit_data.py": {
+      "bytes": 19427,
+      "sha256": "b1f6a328975936bf78becc7874c036565e918081080582e380bd7d7ef105afd2"
+    },
+    "src/kmlee_bam/preprocessing/data/build_celltype_control_scaler.py": {
+      "bytes": 34510,
+      "sha256": "77dac073a973b5592caded867d73a0df651986b6a159d62d8d3d71332f92f5e5"
+    },
+    "src/kmlee_bam/preprocessing/data/build_cp10k_zarr.py": {
+      "bytes": 8608,
+      "sha256": "035d0a8d9577bf35ebc566401c2e0c69554e39d33093adc3fe45ec18a4efb0cd"
+    },
+    "src/kmlee_bam/preprocessing/data/build_gene_union_subset_zarr.py": {
+      "bytes": 28091,
+      "sha256": "e4484deb883852eb9f1bfb85a67146844912fe342dac0733c28786d30f1ab22c"
+    },
+    "src/kmlee_bam/preprocessing/data/ensg_gene_ensg_converter.py": {
+      "bytes": 4811,
+      "sha256": "b56e227dd2773cf8165f98bb06ba78a02fc9b4716d9b973543fd677021f439c3"
+    },
+    "src/kmlee_bam/preprocessing/data/make_ordinal_data_zarr.py": {
+      "bytes": 17264,
+      "sha256": "0612d6ca2593d8d134bd7b768042becbd4504988a29c5739d5f645d7f6a5601d"
+    },
+    "src/kmlee_bam/preprocessing/data/make_pathology_aware_donor_split.py": {
+      "bytes": 34806,
+      "sha256": "1a2d85e117033f1f1032e142b1970d939f3c22324188477944f837e8b128fb1a"
+    },
+    "src/kmlee_bam/preprocessing/data/ordinal_sc_data_generator_zarr_03.py": {
+      "bytes": 26166,
+      "sha256": "bd86b82bf310804908d062d9cc151701b6f99fd8ebf4f932f91216c767a9255f"
+    },
+    "src/kmlee_bam/preprocessing/data/pathology_masks.py": {
+      "bytes": 11183,
+      "sha256": "58a4e776fdc440cf62bc0f271482388d397f6c7e6766f24e2d457037444d4d9e"
+    },
+    "src/kmlee_bam/preprocessing/data/residual_R/residual.r": {
+      "bytes": 20,
+      "sha256": "aa9b6ba2a6ba65798f12dc0f9237756cbd8a79b1a09957a9a84dcf0ba2ca13fd"
+    },
+    "src/kmlee_bam/training/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/kmlee_bam/training/adaptive_subgroup_trainer.py": {
+      "bytes": 60379,
+      "sha256": "a5f7d1bb782f1935c42f7f43320aa35c6fdc1219e5b602753168ad543f7b1dd7"
+    },
+    "src/kmlee_bam/training/adversarial_trainer.py": {
+      "bytes": 39026,
+      "sha256": "39f21a13027b20726a4cc833b10ff9f25f7a674850c8ce31ba61f3bfedf4510b"
+    },
+    "src/kmlee_bam/training/architecture_capacity_logging.py": {
+      "bytes": 11636,
+      "sha256": "87b62f8fcf4b88ea34e6921a1679cffa6c9ba9b985fe69d917260594c60665a7"
+    },
+    "src/kmlee_bam/training/architecture_donor_split.py": {
+      "bytes": 12704,
+      "sha256": "f890503124ee4c40576560e3e3053441b971cd6628156c931137974a1b4774ed"
+    },
+    "src/kmlee_bam/training/calibrated_trainer.py": {
+      "bytes": 19364,
+      "sha256": "8515a0f10f033128db2a3a7748ed307f6d297fd98789ad8c9cc550dcac7597b5"
+    },
+    "src/kmlee_bam/training/core_trainer.py": {
+      "bytes": 202296,
+      "sha256": "8086ff60d74f8ed089452f84c74280460a9bc73b39e97bbb55bd8b786547c98f"
+    },
+    "src/kmlee_bam/training/donor_snr_audit.py": {
+      "bytes": 15095,
+      "sha256": "bf850810be0c050a30a1b80b76a2f5362304ee635dfb7d005f9d1288ebabd056"
+    },
+    "src/kmlee_bam/training/generator_budget_controller.py": {
+      "bytes": 29272,
+      "sha256": "8913ce7f6c3c1492cfd0088a0223aa76b58a889bf2f603cfddd35744ea5646a7"
+    },
+    "src/kmlee_bam/training/generator_budget_search.py": {
+      "bytes": 32128,
+      "sha256": "cb502299059407ed1ff906df882df8daae1b567f1dccf923a9d8e2f9c06e917e"
+    },
+    "src/kmlee_bam/training/generator_c10_consumption_ledger.py": {
+      "bytes": 66096,
+      "sha256": "fc3e49911ba6132649960700479b917b8051d1f0f1b66c0d0d49ef523316f00e"
+    },
+    "src/kmlee_bam/training/generator_exact_confirmation.py": {
+      "bytes": 74798,
+      "sha256": "5842a2d3dd86ee5f51d4e87175259b00a9b2b9f9d5409a1bdaef7df86af1393a"
+    },
+    "src/kmlee_bam/training/generator_exact_evaluation.py": {
+      "bytes": 41515,
+      "sha256": "33b696d478970420e509bafa351d986b73242d961f2e60e05cb38b97c116f209"
+    },
+    "src/kmlee_bam/training/generator_exact_executor.py": {
+      "bytes": 24228,
+      "sha256": "3bf5354fe4081cdc5c806abd290aacf4f3e338f845715e9538c859cb90e3c1b7"
+    },
+    "src/kmlee_bam/training/generator_exact_metric_backend.py": {
+      "bytes": 19137,
+      "sha256": "be9c55eeaa468fc953ef4b9f76c6a15f21a081b63e3eebe7821ab3d181c6a518"
+    },
+    "src/kmlee_bam/training/generator_exact_training_backend.py": {
+      "bytes": 16727,
+      "sha256": "513236d6dd34041e629090550b283b51e2760b8d5443e8d445d586984ea641bf"
+    },
+    "src/kmlee_bam/training/generator_w44_source_preparation.py": {
+      "bytes": 27349,
+      "sha256": "dcc29185de6f54d6d02fb08915dcd9d9674634aff26cc20e70fe16bfdc044ab9"
+    },
+    "src/kmlee_bam/training/integrated_phase_curriculum.py": {
+      "bytes": 14347,
+      "sha256": "f7f9b62c48d2289e92270234e8f3a498176cdc9e645d1d562884c43a852e1837"
+    },
+    "src/kmlee_bam/training/learned_generator_count.py": {
+      "bytes": 28442,
+      "sha256": "c8fa668a086b8582e262220998e9dfccab65c23dfcda08a25b46cef69882de28"
+    },
+    "src/kmlee_bam/training/learned_pathology_rank.py": {
+      "bytes": 16843,
+      "sha256": "2bf8baa9de1b09593267716e61001b97404ebf87af88548b50d1177e57c10263"
+    },
+    "src/kmlee_bam/training/pathology_aware_uncertainty_trainer.py": {
+      "bytes": 27876,
+      "sha256": "f04153b04679ebef535a7882b44edb765c0b487ccd64949ef52495298c4aeaf3"
+    },
+    "src/kmlee_bam/training/prism_module_rescue_training.py": {
+      "bytes": 167413,
+      "sha256": "d15123676cd47fd5b795a376635b4c4b4fdd72335022ec5859d576a553cf8f61"
+    },
+    "src/kmlee_bam/training/reference_anchored_trainer.py": {
+      "bytes": 44592,
+      "sha256": "11afbbc650cdba956bce703a67a2a22f52d7dbbc25f8855f423320cd714982fa"
+    },
+    "src/kmlee_bam/training/run_current.py": {
+      "bytes": 153520,
+      "sha256": "6d18e298ea49a449ac7365ce1a6d12b91a8058556152e757530b4bc5e62911a6"
+    },
+    "src/kmlee_bam/training/runner_base.py": {
+      "bytes": 239655,
+      "sha256": "7d3cb7d4b1d58f46e2d04fba115c8cb2c1e6fca23db50bd22821bd770d4562d9"
+    },
+    "src/kmlee_bam/training/sealed_donor_allowlist.py": {
+      "bytes": 11868,
+      "sha256": "e23b416d031506495666102c121985818114163b367eb7d1f4088c0344a3e390"
+    },
+    "src/kmlee_bam/training/tech_invariance.py": {
+      "bytes": 8726,
+      "sha256": "98aeb20de903d9b907ddf2633cdc96e544ac4e864e0147a64a1c8a787bcb1e7c"
+    },
+    "src/kmlee_bam/uncertainty/__init__.py": {
+      "bytes": 1232,
+      "sha256": "e786db7a370693130828ab70dbf3ef760dc2d8332e3d50ad410f36379a19528f"
+    },
+    "src/kmlee_bam/uncertainty/ancova.py": {
+      "bytes": 8265,
+      "sha256": "675e5b08b3bb51e10e10c4d68998c06aaed49f6cecea899eb65748c5568a31ad"
+    },
+    "src/kmlee_bam/uncertainty/bank.py": {
+      "bytes": 10547,
+      "sha256": "d05f74d23ed52317f740df97bb718ebd6bb8693cc1d957460801bdcf9f151ca6"
+    },
+    "src/kmlee_bam/uncertainty/decomposition.py": {
+      "bytes": 3893,
+      "sha256": "2b0e519caacb1e3084050039a1f7905cbe1203a36a91d4fc59caec6fa2a716df"
+    },
+    "src/kmlee_bam/uncertainty/difficulty_profile.py": {
+      "bytes": 25267,
+      "sha256": "1abfb7d18ce9a9aff14b14a8de7d40bce80a65ccb63084b391bc6b4e7bf88bcb"
+    },
+    "src/kmlee_bam/uncertainty/noise_score.py": {
+      "bytes": 3399,
+      "sha256": "2c845a8f2e0152dfb09552ce6d3e8ce4560a4042dac0ea6b12c5d4922f5df3c3"
+    },
+    "src/kmlee_bam/uncertainty/sampler.py": {
+      "bytes": 2857,
+      "sha256": "7b21ebfe3acf41b057dc71aed19358e96dd9c589be4438bfb2ca11f48dafabf8"
+    },
+    "tests/__init__.py": {
+      "bytes": 77,
+      "sha256": "127981790920aa7e6af5fbae3e9724095fe9b50d6e6604f7157dcc31182fbc3e"
+    },
+    "tests/test_architecture_capacity_logging.py": {
+      "bytes": 8270,
+      "sha256": "92f1bb64a3190efc4889a357326484a6185a860af4cc6cac1f42b657bf3b23ec"
+    },
+    "tests/test_cognitive_report_regression_20260921.py": {
+      "bytes": 1305,
+      "sha256": "ab4665456d81d793a80b7095927d0a30d23b05d9bb465001d45fc778585861d2"
+    },
+    "tests/test_integrated_learned_pathology_rank_curriculum.py": {
+      "bytes": 8900,
+      "sha256": "89268908ff6948cdf7c9d0f8290ceffe1e6a47ac52bfbc366f761b0538b6ff61"
+    },
+    "tests/test_integrated_pathrank_cls_recovery_contract.py": {
+      "bytes": 2355,
+      "sha256": "471a8f6855b3ece11d7f9cf6edace62e53db00f680fde08a433e3714aa758652"
+    },
+    "tests/test_integrated_rank8_cls_rescue_contract.py": {
+      "bytes": 1630,
+      "sha256": "f196a5fb610cd99a3fbbba0a42fc4e7ea7e63370f065f67831c62f453d4ef552"
+    },
+    "tests/test_latent_knn_pi_tech_bank.py": {
+      "bytes": 20046,
+      "sha256": "2e32b0cb51e04f99adb2cc048c12a1e1e326635afaf53182b7a46a3aabc49712"
+    },
+    "tests/test_module_local_compartmental_nonlinearity.py": {
+      "bytes": 18333,
+      "sha256": "73a26252bf0f159b32906fa4e2ab9446f424aaab523f6d124850fb4155e77dbb"
+    },
+    "tests/test_module_local_training_contracts.py": {
+      "bytes": 6905,
+      "sha256": "c3895ba599fea0fbfa16b3cf54d94e698a7e47d5adbdd69db106c6a1879de549"
+    },
+    "tests/test_precision_module_local_residual.py": {
+      "bytes": 14751,
+      "sha256": "50040143a89caa5c0eca49d26bd000e578a8a8f8723d5b2d2130a88c1730ea23"
+    },
+    "tests/test_running_averages_sparse_metrics.py": {
+      "bytes": 2020,
+      "sha256": "f631b460c4733ca38a798e79a00a39791701616bc1aa1797707952d4316bc5e6"
+    }
+  }
+}

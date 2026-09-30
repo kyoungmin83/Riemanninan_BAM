@@ -1,0 +1,10 @@
+{
+  "src_zarr_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/sea_ad_dlpfc_mtg_gene_union_subset_raw.zarr",
+  "out_zarr_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/sea_ad_dlpfc_mtg_gene_union_subset_cp10k_v1.zarr",
+  "source_matrix": "X",
+  "umi_col": "Number of UMIs",
+  "scale_factor": 10000.0,
+  "row_block_size": 4096,
+  "overwrite": false,
+  "out_manifest_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/sea_ad_dlpfc_mtg_gene_union_subset_cp10k_v1.zarr.manifest.json"
+}

@@ -1,0 +1,70 @@
+{
+  "zarr_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/sea_ad_dlpfc_mtg_gene_union_subset_cp10k_v1.zarr",
+  "spec_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/final_gene_union_ordinal_spec_log1p_cp10k_bins4_dlpfc_mtg_v1.npz",
+  "gene_indices_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/gene_union_subset_identity_indices_dlpfc_mtg.npy",
+  "obs_parquet_path": null,
+  "obs_csv_path": null,
+  "obs_h5ad_path": null,
+  "out_npz_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/reference_gene_scaler_cp10k_bins4_dlpfc_mtg_celltype_v1.npz",
+  "out_json_path": "/gstorage_data/riemann_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/combined/final_registry/reference_gene_scaler_cp10k_bins4_dlpfc_mtg_celltype_v1_summary.json",
+  "matrix_path": "X",
+  "counts_layer": "counts",
+  "prefer_raw": false,
+  "split_key": "split",
+  "train_split_name": "train",
+  "celltype_key": "Subclass",
+  "donor_key": "donor_id",
+  "control_filters": [
+    {
+      "column": "disease",
+      "values": [
+        "normal"
+      ]
+    },
+    {
+      "column": "ADNC",
+      "values": [
+        "Reference",
+        "Not AD",
+        "Low"
+      ]
+    },
+    {
+      "column": "LATE-NC stage",
+      "values": [
+        "Reference",
+        "Not Identified"
+      ]
+    },
+    {
+      "column": "Lewy body disease pathology",
+      "values": [
+        "Reference",
+        "Not Identified (olfactory bulb assessed)",
+        "Not Identified (olfactory bulb not assessed)"
+      ]
+    },
+    {
+      "column": "Microinfarct pathology",
+      "values": [
+        "Reference",
+        "0 to 3 microinfarcts"
+      ]
+    }
+  ],
+  "case_insensitive_filter": true,
+  "donor_balanced": true,
+  "chunk_size": 4096,
+  "std_floor": 0.001,
+  "use_shrinkage": true,
+  "shrinkage_k_donors": 5.0,
+  "shrinkage_k_cells": null,
+  "warn_min_control_cells": 30,
+  "warn_min_control_donors": 3,
+  "check_counts_sanity": false,
+  "counts_sanity_n_cells": 64,
+  "counts_integer_atol": 0.001,
+  "counts_integer_fraction_threshold": 0.95,
+  "scaler_version": "celltype_control_scaler_dlpfc_mtg_cp10k_bins4_v1",
+  "description": "DLPFC+MTG celltype-level low-pathology control-train donor-balanced log1p(CP10K) scaler for module-token x_gene_scalar; region is not part of the scaler key in v1."
+}

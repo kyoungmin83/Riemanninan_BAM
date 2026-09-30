@@ -1,0 +1,509 @@
+{
+  "schema_version": "kmlee_bam.prism_integrated_compartmental_techzero_blueprint.v2",
+  "created_at": "2026-08-27",
+  "revised_at": "2026-08-28",
+  "revision": "direct_rank_first_then_generator_search_with_explicit_paper_live_logging",
+  "status": "review_only_implementation_complete_training_not_launched",
+  "_launch_guard": {
+    "launch_allowed": false,
+    "reason": "Requires learned-rank full-system parity, rank/generator boundary, paper-design, artifact, resume/smoke/budget, holdout, and explicit launch audits."
+  },
+  "lineage_contract": {
+    "one_architecture": true,
+    "one_continuous_optimizer_scheduler_trajectory": true,
+    "one_run_directory": true,
+    "one_checkpoint_history": true,
+    "canonical_ct64_phase1_warmup_required": true,
+    "pathology_rank_tensor_allocation": "automatic_algebraic_capacity",
+    "pathology_rank_capacity_at_24_celltypes_4_axes_13498_genes": 96,
+    "phase1_effective_pathology_rank": 8,
+    "learn_pathology_rank": true,
+    "personal_prism_rank": 2,
+    "learn_personal_prism_rank": false,
+    "pathology_route_active_through_final_epoch": true,
+    "legacy_official_test_donor_count": 9,
+    "legacy_official_test_status": "previously_consumed_not_eligible_for_model_selection",
+    "new_untouched_confirmatory_holdout_required": true
+  },
+  "learned_pathology_rank": {
+    "enabled": true,
+    "decoder_pathology_rank_auto_sentinel": 0,
+    "capacity_formula": "min(n_celltypes*n_pathology_axes,n_genes)",
+    "resolved_capacity": 96,
+    "warmup_fixed_rank": 8,
+    "warmup_end_epoch": 24,
+    "initial_keep_probability": 0.995,
+    "initial_extra_keep_probability": 0.5,
+    "soft_start_epoch": 25,
+    "soft_start_transition": "direct_full_learned_mask_no_crossfade",
+    "discovery_without_cardinality_epochs": "25-28",
+    "sparsity_start_epoch": 29,
+    "sparsity_ramp_epochs": 4,
+    "hard_start_epoch": 33,
+    "freeze_epoch": 37,
+    "temperature_start": 2.0,
+    "temperature_end": 0.35,
+    "cardinality_loss_fraction": 0.0025,
+    "learning_rate": 0.00003,
+    "weight_decay": 0.0,
+    "hard_threshold": 0.5,
+    "require_stable_freeze": true,
+    "freeze_threshold_low": 0.45,
+    "freeze_threshold_high": 0.55,
+    "maximum_freeze_count_spread": 4,
+    "maximum_freeze_uncertain_fraction": 0.15,
+    "minimum_rank": null,
+    "target_rank": null,
+    "require_canonical_phase1_rank8": true,
+    "require_active_pathology_route_during_search": true,
+    "phase1_pathology_scale": 1.0,
+    "phase2_pathology_scale": 1.0,
+    "commit_gate": {
+      "required_before_epoch_37": true,
+      "threshold_sensitivity_values": [
+        0.45,
+        0.5,
+        0.55
+      ],
+      "maximum_count_spread": 4,
+      "maximum_uncertain_fraction_between_0_45_and_0_55": 0.15,
+      "validation_noninferiority_required": [
+        "ordinal_reconstruction",
+        "celltype_general_module_recovery",
+        "celltype_ad_module_recovery",
+        "sex_tech_depth_pathology_leakage",
+        "celltype_tail_floor"
+      ],
+      "on_failure": "do_not_start_generator_search_and_do_not_release_model"
+    }
+  },
+  "rank_generator_coordination": {
+    "pathology_rank_search_epochs": "25-36",
+    "pathology_rank_frozen_from_epoch": 37,
+    "generator_search_start_epoch": 37,
+    "generator_shadow_end_epoch": 40,
+    "generator_soft_end_epoch": 44,
+    "generator_hard_epochs": "45-55",
+    "require_frozen_pathology_rank_before_generator_search": true,
+    "simultaneous_rank_and_generator_cardinality_penalties_allowed": false,
+    "generator_live_forward_before_epoch_37": "all_on",
+    "interpretation": "rank selects named-pathology celltype correction capacity first; generators are compressed only after that role is fixed"
+  },
+  "paper_translation": {
+    "source_pdf": "ref/Dendritic morphology and synaptic nonlinearities enhancefunctional complexity in human cortical neurons.pdf",
+    "doi": "10.1073/pnas.2533168123",
+    "interpretation": "computational_analogy_not_observed_dendritic_biophysics",
+    "copy_35_synapse_threshold": false,
+    "implemented_principles": [
+      "fixed_compartment_structure",
+      "structure_and_drive_interaction",
+      "bounded_threshold",
+      "bounded_slope",
+      "bounded_gain",
+      "paired_nonlinear_off_diagnostic"
+    ]
+  },
+  "precision_medicine_patch": {
+    "module_local_enabled": true,
+    "module_local_start_epoch": 17,
+    "module_local_ramp_epochs": 8,
+    "module_local_rescue_start_epoch": 25,
+    "module_local_nonlinear_enabled": true,
+    "module_local_nonlinear_variant": "compartmental_threshold",
+    "module_local_compartment_graph_npz_path": "__REQUIRED_SEALED_REGISTRY_ONLY_GRAPH_NPZ__",
+    "module_local_nonlinear_start_epoch": 21,
+    "module_local_nonlinear_ramp_epochs": 4,
+    "module_local_compartment_mix_max": 0.5,
+    "module_local_threshold_min": 0.5,
+    "module_local_threshold_max": 2.0,
+    "module_local_slope_min": 1.0,
+    "module_local_slope_max": 8.0,
+    "module_local_gain_max": 1.0,
+    "unchanged_v1_guards": [
+      "target_celltype_both_regions_excluded",
+      "sealed_train_only_reliability",
+      "frozen_rank2_output_cap",
+      "personal_rank2_span_projection",
+      "module_local_size_cap",
+      "pathology_and_age_leakage_guards"
+    ]
+  },
+  "function_class_ablation": {
+    "required": true,
+    "same_seed_split_step_budget_and_graph": true,
+    "effective_capacity_matched": false,
+    "raw_checkpoint_layout_matched_between_graph_and_threshold_arms": true,
+    "same_shared_mix_gain_initialization": true,
+    "same_raw_tensor_initial_values": true,
+    "interpretation": "same graph and input: graph-linear function class versus bounded threshold-curvature function class",
+    "arms": [
+      {
+        "name": "v1_linear_reference",
+        "module_local_nonlinear_enabled": false,
+        "purpose": "measure the total effect relative to the pre-paper linear path"
+      },
+      {
+        "name": "graph_linear_control",
+        "module_local_nonlinear_enabled": true,
+        "module_local_nonlinear_variant": "graph_linear_control",
+        "purpose": "function-class control with the same graph, input, curriculum, and shared mix/gain initialization",
+        "trainable_parameter_families": [
+          "mix",
+          "gain"
+        ],
+        "frozen_unused_checkpoint_families": [
+          "threshold",
+          "slope"
+        ],
+        "stored_raw_parameter_count_at_414_modules_24_celltypes": 41400,
+        "trainable_raw_parameter_count_at_414_modules_24_celltypes": 20700,
+        "generic_effective_field_upper_bound_at_414_modules_24_celltypes": 19872
+      },
+      {
+        "name": "paper_compartmental_threshold",
+        "module_local_nonlinear_enabled": true,
+        "module_local_nonlinear_variant": "compartmental_threshold",
+        "purpose": "test bounded threshold, gain-slope interaction, and supralinear curvature",
+        "trainable_parameter_families": [
+          "mix",
+          "threshold",
+          "slope",
+          "gain"
+        ],
+        "stored_raw_parameter_count_at_414_modules_24_celltypes": 41400,
+        "trainable_raw_parameter_count_at_414_modules_24_celltypes": 41400,
+        "generic_effective_field_upper_bound_at_414_modules_24_celltypes": 39744
+      }
+    ],
+    "stacked_input_jacobian_contract": {
+      "probe_modules": 8,
+      "probe_celltypes": 3,
+      "minimum_inputs_per_celltype": 4,
+      "graph_linear_expected_generic_rank": 48,
+      "threshold_expected_generic_rank": 96,
+      "interpretation": "local identifiability regression only, not a proof of global representational capacity"
+    }
+  },
+  "rank_policy_ablation": {
+    "required": true,
+    "paper_arm_learned_rank_primary": true,
+    "paper_arm_fixed_rank8_control": true,
+    "same_seed_split_step_budget_graph_and_nonlinear_schedule": true,
+    "purpose": "separate the effect of learned pathology rank from the paper-inspired compartmental nonlinearity"
+  },
+  "compartment_graph_builder": {
+    "script": "scripts/training/build_prism_module_local_compartment_graph_20260827.py",
+    "topk": 4,
+    "minimum_jaccard": 0.05,
+    "self_edges": false,
+    "row_normalized": true,
+    "learnable_adjacency": false,
+    "donor_or_outcome_data_used": false,
+    "command_template": "PYTHONPATH=src python scripts/training/build_prism_module_local_compartment_graph_20260827.py --registry __SEALED_REGISTRY__ --output __SEALED_GRAPH_NPZ__ --topk 4 --minimum-jaccard 0.05"
+  },
+  "pi_tech": {
+    "enabled": true,
+    "mode": "same_celltype_donor_bank",
+    "biological_neighbor_match": [
+      "celltype",
+      "region"
+    ],
+    "k": 16,
+    "in_batch_k": 8,
+    "bank_start_epoch": 13,
+    "bank_ramp_epochs": 4,
+    "bank_refresh_epochs": 1,
+    "bank_per_donor_celltype": 2,
+    "bank_batch_size": 48,
+    "bank_num_workers": 0,
+    "bank_min_distinct_donors": 4,
+    "bank_detect_shrinkage_donors": 8.0,
+    "bank_seed": 20260827,
+    "bank_exclude_query_donor": true,
+    "bank_invalid_fallback": "zero",
+    "bank_match_region": true,
+    "diagnostic_min_positions": 256,
+    "diagnostic_min_cells": 8,
+    "diagnostic_min_distinct_donors": 2,
+    "depth_proxy": "n_detected",
+    "sex_linked_gene_names": [
+      "XIST",
+      "RPS4Y1",
+      "KDM5D",
+      "UTY",
+      "ZFY",
+      "EIF1AY",
+      "USP9Y",
+      "RPS4X",
+      "DDX3X",
+      "EIF1AX"
+    ],
+    "allow_missing_sex_linked_genes": false,
+    "sex_whitelist_status": "all_names_resolve_in_current_13498_gene_decoder_order_biological_annotation_review_still_required",
+    "sex_linked_expected_resolution": {
+      "XIST": {
+        "ensembl_id": "ENSG00000229807",
+        "decoder_index": 10024
+      },
+      "RPS4Y1": {
+        "ensembl_id": "ENSG00000129824",
+        "decoder_index": 3512
+      },
+      "KDM5D": {
+        "ensembl_id": "ENSG00000012817",
+        "decoder_index": 190
+      },
+      "UTY": {
+        "ensembl_id": "ENSG00000183878",
+        "decoder_index": 8153
+      },
+      "ZFY": {
+        "ensembl_id": "ENSG00000067646",
+        "decoder_index": 606
+      },
+      "EIF1AY": {
+        "ensembl_id": "ENSG00000198692",
+        "decoder_index": 8984
+      },
+      "USP9Y": {
+        "ensembl_id": "ENSG00000114374",
+        "decoder_index": 2471
+      },
+      "RPS4X": {
+        "ensembl_id": "ENSG00000198034",
+        "decoder_index": 8909
+      },
+      "DDX3X": {
+        "ensembl_id": "ENSG00000215301",
+        "decoder_index": 9429
+      },
+      "EIF1AX": {
+        "ensembl_id": "ENSG00000173674",
+        "decoder_index": 7391
+      }
+    },
+    "sex_linked_candidates_absent_from_current_decoder": [
+      "DDX3Y",
+      "TMSB4Y",
+      "KDM5C",
+      "KDM6A",
+      "USP9X",
+      "ZFX"
+    ],
+    "technology_neighbor_restriction": false,
+    "pi_cap": 0.7,
+    "depth_low_pct": 0.25,
+    "depth_low_temp": 0.05,
+    "detect_floor": 0.05,
+    "neighbor_on_hi": 0.5,
+    "safety_neighbor_off": 0.2,
+    "w_measure": 0.5,
+    "w_neighbor": 0.5,
+    "pi_soft_target_zero": 0.5,
+    "pi_downweight_zero": 0.7,
+    "detached": true,
+    "not_an_input_to_module_local": true
+  },
+  "curriculum": [
+    {
+      "epochs": "1-12",
+      "stage": "canonical_ct64_biological_warmup",
+      "requirements": [
+        "active_four_axis_first_order_pathology_decoder",
+        "active_donor_balanced_pathology_auxiliary_head",
+        "learning_rate_0.0001",
+        "gradient_accumulation_1",
+        "fixed_pathology_rank_8"
+      ]
+    },
+    {
+      "epochs": "13-16",
+      "stage": "technical_zero_bank_ramp",
+      "blend": [
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ]
+    },
+    {
+      "epochs": "17-24",
+      "stage": "module_local_v1_ramp"
+    },
+    {
+      "epochs": "21-24",
+      "stage": "compartmental_nonlinearity_ramp"
+    },
+    {
+      "epochs": "25-28",
+      "stage": "pathology_rank_soft_discovery",
+      "requirements": [
+        "full_96_component_learned_mask_active_immediately_at_epoch_25",
+        "no_warmup_to_search_crossfade",
+        "module_and_ad_axis_rescue",
+        "celltype_tail_protection",
+        "all_generators_live_and_unpenalized",
+        "no_pathology_rank_cardinality_penalty",
+        "nonlinear_rescue_only_after_both_local_ramps_equal_1"
+      ]
+    },
+    {
+      "epochs": "29-32",
+      "stage": "pathology_rank_soft_sparsity_ramp",
+      "requirements": [
+        "all_generators_live_and_unpenalized",
+        "pathology_route_scale_1"
+      ]
+    },
+    {
+      "epochs": "33-36",
+      "stage": "pathology_rank_hard_stabilization",
+      "requirements": [
+        "straight_through_hard_rank_mask",
+        "generator_search_not_started",
+        "rank_commit_audit_at_epoch_36"
+      ]
+    },
+    {
+      "epochs": "37-40",
+      "stage": "frozen_pathology_rank_generator_shadow",
+      "requirements": [
+        "rank_mask_committed_before_first_generator_objective",
+        "live_generators_all_on"
+      ]
+    },
+    {
+      "epochs": "41-44",
+      "stage": "frozen_pathology_rank_generator_soft_adaptation"
+    },
+    {
+      "epochs": "45-55",
+      "stage": "frozen_pathology_rank_generator_hard_search_and_consolidation"
+    }
+  ],
+  "required_diagnostics": [
+    "metric/prism_paper_branch_enabled",
+    "metric/prism_paper_branch_variant_compartmental_threshold",
+    "metric/prism_paper_branch_variant_graph_linear_control",
+    "metric/prism_module_local_nonlinear_rms",
+    "metric/prism_module_local_nonlinear_to_local_ratio",
+    "metric/prism_module_local_threshold_crossing_fraction",
+    "weight/prism_module_local_nonlinear_ramp",
+    "metric/prism_module_local_nonlinear_branch_nll_gain",
+    "metric/prism_module_local_nonlinear_full_nll_gain",
+    "metric/prism_module_local_linear_scale_mean",
+    "metric/prism_module_local_linear_scale_rms",
+    "metric/prism_module_local_linear_scale_min",
+    "metric/prism_module_local_linear_scale_max",
+    "metric/prism_module_local_mix_mean",
+    "metric/prism_module_local_threshold_mean",
+    "metric/prism_module_local_slope_mean",
+    "metric/prism_module_local_gain_mean",
+    "metric/pathology_rank_capacity",
+    "metric/pathology_rank_expected",
+    "metric/pathology_rank_hard",
+    "metric/pathology_rank_uncertain_fraction",
+    "metric/pathology_rank_temperature",
+    "metric/pathology_rank_finalized",
+    "metric/pathology_rank_freeze_ready",
+    "metric/pathology_rank_freeze_count_spread",
+    "metric/pathology_rank_freeze_near_threshold_uncertain_fraction",
+    "weight/pathology_rank_sparsity_multiplier",
+    "pathology_correction_rank_axis_participation_rank_95_energy_rank_and_spectrum",
+    "metric/generator_mode_shadow",
+    "metric/generator_mode_soft",
+    "metric/generator_mode_hard",
+    "metric/generator_hard_active",
+    "metric/generator_expected_active",
+    "metric/pi_tech_bank_blend",
+    "metric/pi_tech_bank_valid_query_fraction",
+    "metric/pi_tech_bank_effective_k",
+    "metric/pi_tech_bank_epoch",
+    "metric/pi_tech_bank_sex_valid_query_fraction",
+    "metric/pi_tech_bank_invalid_zero_fraction",
+    "metric/pi_tech_at_proven_dropout",
+    "metric/pi_tech_at_stable_zero",
+    "metric/pi_tech_proven_stable_gap",
+    "count/pi_tech_proven_positions",
+    "count/pi_tech_stable_positions",
+    "count/pi_tech_thinning_cells",
+    "count/pi_tech_thinning_distinct_donors",
+    "celltype_region_stratified_bank_coverage_and_thinning_support"
+  ],
+  "live_training_logging": {
+    "console_style": "prism_integrated",
+    "train_step_log_every": 100,
+    "progress_eta_every": 500,
+    "validation_step_log_every": 2000,
+    "step_capacity_block": [
+      "pathology_route_scale_and_absmean",
+      "pathology_rank_live_hard_expected_capacity",
+      "pathology_rank_search_hard_expected",
+      "pathology_rank_mode_temperature_sparsity",
+      "pathology_rank_freeze_low_mid_high_spread_uncertainty_ready",
+      "generator_live_hard_expected_mode_temperature_uncertainty",
+      "rank_generator_cardinality_overlap_guard",
+      "paper_branch_source_variant_and_computational_analogy_notice",
+      "paper_branch_ramp_nonlinear_local_rms_ratio_and_threshold_crossing",
+      "paper_branch_off_counterfactual_branch_and_full_nll_gain",
+      "paper_branch_mix_threshold_slope_gain"
+    ],
+    "epoch_console_dashboard": true,
+    "machine_readable_outputs": [
+      "architecture_capacity_history.jsonl",
+      "architecture_capacity_latest.json",
+      "architecture_capacity_epoch_NNN.json",
+      "pathology_correction_rank.jsonl",
+      "joint_generator_count_latest.json",
+      "joint_generator_count_epoch_NNN.json"
+    ],
+    "architecture_capacity_record_includes": [
+      "paper_compartmental_branch",
+      "source_pdf",
+      "variant",
+      "ramp",
+      "nonlinear_local_signal",
+      "off_counterfactual_nll_gain",
+      "bounded_parameter_summaries"
+    ],
+    "fail_closed_conditions": [
+      "pathology_route_zero_during_rank_search",
+      "rank_freeze_threshold_instability",
+      "rank_and_generator_cardinality_overlap"
+    ]
+  },
+  "performance_contract": {
+    "reference_step_seconds": 0.57,
+    "maximum_relative_step_time_regression": 0.05,
+    "bank_statistics_cache_scope": "epoch-frozen donor-balanced bank sufficient statistics and depth ECDF only",
+    "global_gene_detection_ema": "live step-wise value applied after cached lookup",
+    "parity_requirement": "cached and reference-loop values agree within float32 numerical tolerance for multiple changing EMA vectors"
+  },
+  "prelaunch_gates": [
+    "phase1_epoch12_parity",
+    "phase1_effective_rank_exactly_8",
+    "full_capacity_extra_rank_components_have_zero_phase1_forward_and_gradient",
+    "epoch25_direct_full_learned_mask_without_crossfade",
+    "resume_equivalence_including_rank_gate_and_pi_tech_bank",
+    "merged_curriculum_smoke_traversal",
+    "exact_step_budget_audit",
+    "legacy_test_excluded_from_selection_audit",
+    "new_untouched_confirmatory_holdout_audit",
+    "pathology_route_nonzero_during_rank_search",
+    "rank_threshold_sensitivity_and_validation_commit_gate",
+    "rank_frozen_before_generator_search",
+    "no_simultaneous_rank_and_generator_cardinality_penalties",
+    "compartment_graph_provenance_audit",
+    "sex_whitelist_exact_resolution",
+    "thinning_proven_vs_stable_zero_discrimination",
+    "module_recovery_and_ad_module_noninferiority",
+    "sex_tech_pathology_leakage_noninferiority",
+    "graph_linear_function_class_control_completed",
+    "paper_arm_fixed_rank8_rank_policy_ablation_completed",
+    "stacked_input_jacobian_contract_passed",
+    "pi_tech_cached_reference_parity_passed",
+    "pi_tech_bank_step_throughput_regression_within_budget",
+    "nonlinear_off_ablation_positive_validation_gain",
+    "explicit_launch_approval"
+  ]
+}

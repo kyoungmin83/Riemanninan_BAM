@@ -1,0 +1,31 @@
+{
+  "base_registry_json": "/home/kmlee/project_local/kmlee_bam/outputs/SEA_AD/module_mapping_outputs/dlpfc/gene_module_registry.json",
+  "hdwgcna_root_dir": "/home/kmlee/project/kmlee_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/dlpfc/subclass_hvg_work/hdwgcna_outputs",
+  "out_dir": "/home/kmlee/project_local/kmlee_bam/outputs/SEA_AD/module_mapping_outputs/dlpfc/final_registry",
+
+  "symbol_to_gene_ids_json": "/home/kmlee/project_local/kmlee_bam/outputs/SEA_AD/module_mapping_outputs/dlpfc/symbol_to_gene_ids.json",
+
+  "modules_glob": "**/*_modules_with_kME_self.csv",
+  "fallback_modules_glob": "**/*_modules.csv",
+
+  "gene_column": null,
+  "module_column": null,
+  "kme_column": "kME_self",
+
+  "drop_grey": true,
+  "min_module_size": 8,
+  "max_module_size": 500,
+
+  "drop_existing_residual_modules": true,
+  "drop_existing_hdwgcna_modules": true,
+  "add_leftover_residual_module": false,
+
+  "prune_hdwgcna_redundancy_jaccard": null,
+
+  "write_full_registry": true,
+  "write_compact_registry": true,
+  "write_gene_union": true,
+  "write_activity_weight": true,
+
+  "fail_if_no_hdwgcna_modules": true
+}

@@ -1,0 +1,42 @@
+{
+  "zarr_path": "/home/kmlee/project/kmlee_bam/data/scRNA/SEA_AD/whole_taxnomy/sea_ad_mtg_rechunked.zarr",
+  "registry_json_path": "/home/kmlee/project/kmlee_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/mtg/module_build/gene_module_registry.json",
+  "module_h5ad_path": "/home/kmlee/project/kmlee_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/mtg/module_build/mtg_module_encoder_input.h5ad",
+  "out_dir": "/home/kmlee/project/kmlee_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/mtg/residual_prep_hdwgcna",
+  "obs_csv_path": "/home/kmlee/project/kmlee_bam/outputs/SEA_AD_OUTPUTS/module_mapping_outputs/dlpfc_mtg/pathology_aware_split/obs_with_pathology_split_mtg.csv",
+  "merge_obs_sidecar": true,
+  "use_existing_split": true,
+  "existing_split_key": "split",
+  "donor_key": "donor_id",
+  "disease_key": "disease",
+  "celltype_key": "Subclass",
+  "primary_label_key": null,
+  "seed": 42,
+  "train_frac": 0.85,
+  "val_frac": 0.1,
+  "split_mode": "pretrain",
+  "min_donors_per_stratum": 3,
+  "drop_mixed_in_benchmark": false,
+  "max_gap": 3000000,
+  "chunk_rows_fallback": 4096,
+  "skip_val_test_extraction": true,
+  "write_counts_layer_train": true,
+  "write_counts_layer_val_test": false,
+  "write_counts_layer": null,
+  "batch_candidate_keys": [
+    "assay",
+    "assay_ontology_term_id",
+    "tech_id_model"
+  ],
+  "tech_mixing_threshold": 0.5,
+  "tech_min_median_donors_per_level": 2.0,
+  "tech_max_levels_fraction_of_donors": 0.5,
+  "auto_pick_priority": [
+    "assay",
+    "assay_ontology_term_id",
+    "tech_id_model"
+  ],
+  "auto_pick_blocklist": [],
+  "fail_if_no_safe_tech": false,
+  "preprocess_module_dir": "/home/kmlee/project_local/kmlee_bam/src/kmlee_bam/preprocessing/data/legacy"
+}
